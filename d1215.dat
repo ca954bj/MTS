@@ -1,0 +1,1027 @@
+MTS793|BTW|CHS|1|0|.|-|:|86|2|1|A
+
+Data Header:                                                Time:     5.0942383 Sec       2017-12-15 10:42:49
+Data Acquisition: Timed
+Station Name: 1000B-20151015.cfg
+Test File Name: Untitled test
+1000kN-B Force 1000kN-B Displacement Time
+kN        mm        Sec
+-0.003593083 -0.0019989335 1.0356445
+-0.0017539817 1.0665972e-06 2.0356445
+0.00090155884 -0.0019989335 3.0356445
+-0.0038342397 1.0665972e-06 4.0356445
+0.0056170733 -0.0019989335 5.0356445
+
+
+Data Header:                                                Time:     5.0375977 Sec       2017-12-15 10:43:13
+Data Acquisition: Timed
+Station Name: 1000B-20151015.cfg
+Test File Name: Untitled test
+1000kN-B Force 1000kN-B Displacement Time
+kN        mm        Sec
+-2.1609249 -0.36199895 1.0112305
+-3.510237 -0.76399899 2.0112305
+-5.1425209 -1.167999 3.0112305
+-6.7282367 -1.569999 4.0112305
+-8.2917452 -1.967999 5.0112305
+
+
+Data Header:                                                Time:     5.0375977 Sec       2017-12-15 10:43:27
+Data Acquisition: Timed
+Station Name: 1000B-20151015.cfg
+Test File Name: Untitled test
+1000kN-B Force 1000kN-B Displacement Time
+kN        mm        Sec
+-9.7962742 -2.3639991 1.0107422
+-11.40203 -2.7659991 2.0107422
+-12.908295 -3.1659992 3.0107422
+-14.404234 -3.5679991 4.0107422
+-15.882728 -3.9699991 5.0107422
+
+
+Data Header:                                                Time:     5.0375977 Sec       2017-12-15 10:43:41
+Data Acquisition: Timed
+Station Name: 1000B-20151015.cfg
+Test File Name: Untitled test
+1000kN-B Force 1000kN-B Displacement Time
+kN        mm        Sec
+-17.207075 -4.3579993 1.0112305
+-18.778549 -4.7619991 2.0112305
+-20.236698 -5.1659994 3.0112305
+-21.774879 -5.5719991 4.0112305
+-23.265676 -5.9759994 5.0112305
+
+
+Data Header:                                                Time:     5.0375977 Sec       2017-12-15 10:43:58
+Data Acquisition: Timed
+Station Name: 1000B-20151015.cfg
+Test File Name: Untitled test
+1000kN-B Force 1000kN-B Displacement Time
+kN        mm        Sec
+-24.505613 -6.3579993 1.0107422
+-26.090944 -6.7659993 2.0107422
+-27.566914 -7.1699991 3.0107422
+-29.039907 -7.5759993 4.0107422
+-30.484198 -7.9799995 5.0107422
+
+
+Data Header:                                                Time:     5.0371094 Sec       2017-12-15 10:44:12
+Data Acquisition: Timed
+Station Name: 1000B-20151015.cfg
+Test File Name: Untitled test
+1000kN-B Force 1000kN-B Displacement Time
+kN        mm        Sec
+-31.628057 -8.3579998 1.0107422
+-33.245766 -8.7659998 2.0107422
+-34.679996 -9.1679993 3.0107422
+-36.094868 -9.5759993 4.0107422
+-37.468491 -9.9799995 5.0107422
+
+
+Data Header:                                                Time:     5.0380859 Sec       2017-12-15 10:45:14
+Data Acquisition: Timed
+Station Name: 1000B-20151015.cfg
+Test File Name: Untitled test
+1000kN-B Force 1000kN-B Displacement Time
+kN        mm        Sec
+-34.651798 -9.645999 1.0107422
+-32.412464 -9.237999 2.0107422
+-30.180447 -8.8339996 3.0107422
+-28.587711 -8.4279995 4.0107422
+-27.007788 -8.0259991 5.0107422
+
+
+Data Header:                                                Time:     10.01709  Sec       2017-12-15 10:45:57
+Data Acquisition: Timed
+Station Name: 1000B-20151015.cfg
+Test File Name: Untitled test
+1000kN-B Force 1000kN-B Displacement Time
+kN        mm        Sec
+-27.04495 -7.9979992 1.0112305
+-27.034403 -7.9979992 2.0112305
+-27.038303 -7.9999995 3.0112305
+-27.035143 -7.9999995 4.0112305
+-27.044157 -7.9979992 5.0112305
+-25.554794 -7.6379995 6.0112305
+-23.860989 -7.2339993 7.0112305
+-22.24227 -6.8279991 8.0112305
+-20.567919 -6.4219995 9.0112305
+-19.010895 -6.019999 10.01123
+
+
+Data Header:                                                Time:     5.0375977 Sec       2017-12-15 10:46:03
+Data Acquisition: Timed
+Station Name: 1000B-20151015.cfg
+Test File Name: Untitled test
+1000kN-B Force 1000kN-B Displacement Time
+kN        mm        Sec
+-18.923214 -5.9859991 1.0112305
+-18.958635 -5.9859991 2.0112305
+-18.963221 -5.9859991 3.0112305
+-18.981262 -5.9879994 4.0112305
+-18.995182 -5.9879994 5.0112305
+
+
+Data Header:                                                Time:     5.0380859 Sec       2017-12-15 10:46:21
+Data Acquisition: Timed
+Station Name: 1000B-20151015.cfg
+Test File Name: Untitled test
+1000kN-B Force 1000kN-B Displacement Time
+kN        mm        Sec
+-17.622492 -5.6459994 1.0112305
+-15.984789 -5.2419991 2.0112305
+-14.418107 -4.835999 3.0112305
+-12.87778 -4.427999 4.0112305
+-11.344595 -4.0259991 5.0112305
+
+
+Data Header:                                                Time:     5.0371094 Sec       2017-12-15 10:46:39
+Data Acquisition: Timed
+Station Name: 1000B-20151015.cfg
+Test File Name: Untitled test
+1000kN-B Force 1000kN-B Displacement Time
+kN        mm        Sec
+-9.8957586 -3.641999 1.0107422
+-8.364603 -3.2379992 2.0107422
+-6.8574934 -2.829999 3.0107422
+-5.4061942 -2.427999 4.0107422
+-3.9463475 -2.023999 5.0107422
+
+
+Data Header:                                                Time:     5.0371094 Sec       2017-12-15 10:46:52
+Data Acquisition: Timed
+Station Name: 1000B-20151015.cfg
+Test File Name: Untitled test
+1000kN-B Force 1000kN-B Displacement Time
+kN        mm        Sec
+-2.5480523 -1.635999 1.0112305
+-1.0837119 -1.231999 2.0112305
+0.47297814 -0.83199894 3.0112305
+1.9439329 -0.42999896 4.0112305
+3.4321356 -0.027998935 5.0112305
+
+
+Data Header:                                                Time:     5.0380859 Sec       2017-12-15 10:47:28
+Data Acquisition: Timed
+Station Name: 1000B-20151015.cfg
+Test File Name: Untitled test
+1000kN-B Force 1000kN-B Displacement Time
+kN        mm        Sec
+4.6963143 0.35400108 1.0107422
+6.3559833 0.76000112 2.0107422
+7.8726501 1.1640011 3.0107422
+9.3991108 1.5700011 4.0107422
+10.998466 1.9740012 5.0107422
+
+
+Data Header:                                                Time:     5.0371094 Sec       2017-12-15 10:47:50
+Data Acquisition: Timed
+Station Name: 1000B-20151015.cfg
+Test File Name: Untitled test
+1000kN-B Force 1000kN-B Displacement Time
+kN        mm        Sec
+12.319761 2.3560011 1.0107422
+13.905856 2.7620013 2.0107422
+15.428325 3.1680012 3.0107422
+16.942774 3.5720012 4.0107422
+18.433334 3.9760013 5.0107422
+
+
+Data Header:                                                Time:     5.0375977 Sec       2017-12-15 10:48:10
+Data Acquisition: Timed
+Station Name: 1000B-20151015.cfg
+Test File Name: Untitled test
+1000kN-B Force 1000kN-B Displacement Time
+kN        mm        Sec
+19.720612 4.3580012 1.0107422
+21.357798 4.7620015 2.0107422
+22.84671  5.1660013 3.0107422
+24.331272 5.5700011 4.0107422
+25.787331 5.9760013 5.0107422
+
+
+Data Header:                                                Time:     5.0371094 Sec       2017-12-15 10:48:23
+Data Acquisition: Timed
+Station Name: 1000B-20151015.cfg
+Test File Name: Untitled test
+1000kN-B Force 1000kN-B Displacement Time
+kN        mm        Sec
+27.094498 6.3680015 1.0107422
+28.560148 6.7720013 2.0107422
+29.988241 7.1740012 3.0107422
+31.483349 7.5740013 4.0107422
+32.860065 7.9740014 5.0107422
+
+
+Data Header:                                                Time:     5.0371094 Sec       2017-12-15 10:48:39
+Data Acquisition: Timed
+Station Name: 1000B-20151015.cfg
+Test File Name: Untitled test
+1000kN-B Force 1000kN-B Displacement Time
+kN        mm        Sec
+33.968273 8.3620014 1.0102539
+35.442406 8.7640018 2.0102539
+36.811653 9.1680012 3.0102539
+38.148651 9.5720015 4.0102539
+39.469875 9.9760017 5.0102539
+
+
+Data Header:                                                Time:     5.0366211 Sec       2017-12-15 10:49:14
+Data Acquisition: Timed
+Station Name: 1000B-20151015.cfg
+Test File Name: Untitled test
+1000kN-B Force 1000kN-B Displacement Time
+kN        mm        Sec
+36.53833  9.6420012 1.0107422
+34.219524 9.236002  2.0107422
+32.434147 8.8300018 3.0107422
+30.689032 8.4260015 4.0107422
+29.048641 8.0240011 5.0107422
+
+
+Data Header:                                                Time:     5.0371094 Sec       2017-12-15 10:49:35
+Data Acquisition: Timed
+Station Name: 1000B-20151015.cfg
+Test File Name: Untitled test
+1000kN-B Force 1000kN-B Displacement Time
+kN        mm        Sec
+27.48748  7.6380014 1.0107422
+25.837109 7.2340016 2.0107422
+24.213305 6.8320012 3.0107422
+22.60574  6.4280014 4.0107422
+20.996508 6.0240011 5.0107422
+
+
+Data Header:                                                Time:     5.0371094 Sec       2017-12-15 10:49:53
+Data Acquisition: Timed
+Station Name: 1000B-20151015.cfg
+Test File Name: Untitled test
+1000kN-B Force 1000kN-B Displacement Time
+kN        mm        Sec
+19.379406 5.6360011 1.0107422
+17.80114  5.2320013 2.0107422
+16.217751 4.8300014 3.0107422
+14.677141 4.4300013 4.0107422
+13.135046 4.0280013 5.0107422
+
+
+Data Header:                                                Time:     5.0371094 Sec       2017-12-15 10:50:06
+Data Acquisition: Timed
+Station Name: 1000B-20151015.cfg
+Test File Name: Untitled test
+1000kN-B Force 1000kN-B Displacement Time
+kN        mm        Sec
+11.603548 3.6320012 1.0107422
+10.019662 3.2280011 2.0107422
+8.4687519 2.8260012 3.0107422
+6.9415202 2.4260011 4.0107422
+5.4245105 2.0280011 5.0107422
+
+
+Data Header:                                                Time:     5.0361328 Sec       2017-12-15 10:50:20
+Data Acquisition: Timed
+Station Name: 1000B-20151015.cfg
+Test File Name: Untitled test
+1000kN-B Force 1000kN-B Displacement Time
+kN        mm        Sec
+3.9262593 1.6320012 1.0112305
+2.4401467 1.2320011 2.0112305
+0.94936734 0.83000112 3.0112305
+-0.61593097 0.4240011 4.0112305
+-2.1149237 0.022001067 5.0112305
+
+
+Data Header:                                                Time:     5.0380859 Sec       2017-12-15 10:51:01
+Data Acquisition: Timed
+Station Name: 1000B-20151015.cfg
+Test File Name: Untitled test
+1000kN-B Force 1000kN-B Displacement Time
+kN        mm        Sec
+-3.4320273 -0.35999894 1.0112305
+-4.9323144 -0.75799894 2.0112305
+-6.4034581 -1.163999 3.0112305
+-7.8527107 -1.569999 4.0112305
+-9.2966366 -1.973999 5.0112305
+
+
+Data Header:                                                Time:     5.0380859 Sec       2017-12-15 10:51:13
+Data Acquisition: Timed
+Station Name: 1000B-20151015.cfg
+Test File Name: Untitled test
+1000kN-B Force 1000kN-B Displacement Time
+kN        mm        Sec
+-10.748937 -2.3679991 1.0112305
+-12.103595 -2.7719991 2.0112305
+-13.472551 -3.1739991 3.0112305
+-14.856576 -3.5719991 4.0112305
+-16.271177 -3.9719992 5.0112305
+
+
+Data Header:                                                Time:     5.0380859 Sec       2017-12-15 10:51:24
+Data Acquisition: Timed
+Station Name: 1000B-20151015.cfg
+Test File Name: Untitled test
+1000kN-B Force 1000kN-B Displacement Time
+kN        mm        Sec
+-17.596977 -4.3679991 1.0107422
+-19.11216 -4.7679992 2.0107422
+-20.558254 -5.1699991 3.0107422
+-22.08679 -5.5739994 4.0107422
+-23.574162 -5.9799991 5.0107422
+
+
+Data Header:                                                Time:     5.0375977 Sec       2017-12-15 10:51:37
+Data Acquisition: Timed
+Station Name: 1000B-20151015.cfg
+Test File Name: Untitled test
+1000kN-B Force 1000kN-B Displacement Time
+kN        mm        Sec
+-24.921194 -6.3659992 1.0112305
+-26.468725 -6.7719994 2.0112305
+-27.957478 -7.1739993 3.0112305
+-29.426596 -7.5739994 4.0112305
+-30.903269 -7.9739995 5.0112305
+
+
+Data Header:                                                Time:     5.0375977 Sec       2017-12-15 10:51:52
+Data Acquisition: Timed
+Station Name: 1000B-20151015.cfg
+Test File Name: Untitled test
+1000kN-B Force 1000kN-B Displacement Time
+kN        mm        Sec
+-32.324593 -8.3639994 1.0107422
+-33.839413 -8.7679996 2.0107422
+-35.325584 -9.171999 3.0107422
+-36.772491 -9.5719995 4.0107422
+-38.183697 -9.9719992 5.0107422
+
+
+Data Header:                                                Time:     5.0375977 Sec       2017-12-15 10:52:30
+Data Acquisition: Timed
+Station Name: 1000B-20151015.cfg
+Test File Name: Untitled test
+1000kN-B Force 1000kN-B Displacement Time
+kN        mm        Sec
+-35.71936 -9.6419992 1.0107422
+-33.47868 -9.2359991 2.0107422
+-31.335066 -8.829999 3.0107422
+-29.668392 -8.4259996 4.0107422
+-28.117792 -8.0259991 5.0107422
+
+
+Data Header:                                                Time:     5.0375977 Sec       2017-12-15 10:52:42
+Data Acquisition: Timed
+Station Name: 1000B-20151015.cfg
+Test File Name: Untitled test
+1000kN-B Force 1000kN-B Displacement Time
+kN        mm        Sec
+-26.6255  -7.6319995 1.0102539
+-24.961561 -7.2299991 2.0102539
+-23.387615 -6.8299994 3.0102539
+-21.846123 -6.427999 4.0102539
+-20.202291 -6.0219994 5.0102539
+
+
+Data Header:                                                Time:     5.0375977 Sec       2017-12-15 10:52:56
+Data Acquisition: Timed
+Station Name: 1000B-20151015.cfg
+Test File Name: Untitled test
+1000kN-B Force 1000kN-B Displacement Time
+kN        mm        Sec
+-18.74824 -5.631999 1.0112305
+-17.14926 -5.2279992 2.0112305
+-15.620779 -4.8259993 3.0112305
+-14.123447 -4.4259992 4.0112305
+-12.630734 -4.0239992 5.0112305
+
+
+Data Header:                                                Time:     5.0371094 Sec       2017-12-15 10:53:09
+Data Acquisition: Timed
+Station Name: 1000B-20151015.cfg
+Test File Name: Untitled test
+1000kN-B Force 1000kN-B Displacement Time
+kN        mm        Sec
+-11.196823 -3.6359992 1.0107422
+-9.6654711 -3.2299991 2.0107422
+-8.1995544 -2.825999 3.0107422
+-6.7662873 -2.4239991 4.0107422
+-5.3647852 -2.023999 5.0107422
+
+
+Data Header:                                                Time:     5.0366211 Sec       2017-12-15 10:53:22
+Data Acquisition: Timed
+Station Name: 1000B-20151015.cfg
+Test File Name: Untitled test
+1000kN-B Force 1000kN-B Displacement Time
+kN        mm        Sec
+-4.0108862 -1.629999 1.0107422
+-2.637841 -1.221999 2.0107422
+-1.1925354 -0.827999 3.0107422
+0.30057871 -0.42599896 4.0107422
+1.7452537 -0.021998934 5.0107422
+
+
+Data Header:                                                Time:     5.0375977 Sec       2017-12-15 10:53:55
+Data Acquisition: Timed
+Station Name: 1000B-20151015.cfg
+Test File Name: Untitled test
+1000kN-B Force 1000kN-B Displacement Time
+kN        mm        Sec
+3.0092447 0.36000109 1.0112305
+4.6267357 0.76600111 2.0112305
+6.079946  1.1680012 3.0112305
+7.5695257 1.5700011 4.0112305
+9.0732861 1.9720012 5.0112305
+
+
+Data Header:                                                Time:     5.0380859 Sec       2017-12-15 10:54:06
+Data Acquisition: Timed
+Station Name: 1000B-20151015.cfg
+Test File Name: Untitled test
+1000kN-B Force 1000kN-B Displacement Time
+kN        mm        Sec
+10.600151 2.3660011 1.0107422
+12.090682 2.7680011 2.0107422
+13.590394 3.1720011 3.0107422
+15.087829 3.5760012 4.0107422
+16.591026 3.9800012 5.0107422
+
+
+Data Header:                                                Time:     8.5068359 Sec       2017-12-15 10:54:21
+Data Acquisition: Timed
+Station Name: 1000B-20151015.cfg
+Test File Name: Untitled test
+1000kN-B Force 1000kN-B Displacement Time
+kN        mm        Sec
+18.015451 4.3680015 1.0107422
+19.547243 4.7740011 2.0107422
+21.123474 5.1760015 3.0107422
+22.837547 5.6280012 4.0107422
+24.818373 6.1560016 5.0107422
+26.79232  6.6800013 6.0107422
+28.74909  7.2060013 7.0107422
+30.745811 7.7320013 8.0107422
+
+
+Data Header:                                                Time:     5.0375977 Sec       2017-12-15 10:54:32
+Data Acquisition: Timed
+Station Name: 1000B-20151015.cfg
+Test File Name: Untitled test
+1000kN-B Force 1000kN-B Displacement Time
+kN        mm        Sec
+31.574528 8.0160017 1.0107422
+31.576365 8.0160017 2.0107422
+31.560505 8.012001  3.0107422
+31.538637 8.012001  4.0107422
+31.520638 8.0100012 5.0107422
+
+
+Data Header:                                                Time:     5.0380859 Sec       2017-12-15 10:54:46
+Data Acquisition: Timed
+Station Name: 1000B-20151015.cfg
+Test File Name: Untitled test
+1000kN-B Force 1000kN-B Displacement Time
+kN        mm        Sec
+33.020416 8.3640013 1.0107422
+34.620419 8.7660017 2.0107422
+36.099659 9.1680012 3.0107422
+37.599133 9.5720015 4.0107422
+39.068325 9.9720011 5.0107422
+
+
+Data Header:                                                Time:     5.0375977 Sec       2017-12-15 10:55:02
+Data Acquisition: Timed
+Station Name: 1000B-20151015.cfg
+Test File Name: Untitled test
+1000kN-B Force 1000kN-B Displacement Time
+kN        mm        Sec
+36.454536 9.6420012 1.0112305
+34.127403 9.2400017 2.0112305
+32.387096 8.8340015 3.0112305
+30.612215 8.4340019 4.0112305
+28.990992 8.0320015 5.0112305
+
+
+Data Header:                                                Time:     5.0375977 Sec       2017-12-15 10:55:14
+Data Acquisition: Timed
+Station Name: 1000B-20151015.cfg
+Test File Name: Untitled test
+1000kN-B Force 1000kN-B Displacement Time
+kN        mm        Sec
+27.351343 7.6340013 1.0107422
+25.764936 7.2320013 2.0107422
+24.159801 6.8300014 3.0107422
+22.570734 6.4300013 4.0107422
+20.975643 6.0240011 5.0107422
+
+
+Data Header:                                                Time:     5.0380859 Sec       2017-12-15 10:55:28
+Data Acquisition: Timed
+Station Name: 1000B-20151015.cfg
+Test File Name: Untitled test
+1000kN-B Force 1000kN-B Displacement Time
+kN        mm        Sec
+19.363356 5.6320014 1.0107422
+17.810713 5.2340012 2.0107422
+16.2437   4.8320012 3.0107422
+14.700259 4.4280014 4.0107422
+13.148355 4.0240011 5.0107422
+
+
+Data Header:                                                Time:     5.0366211 Sec       2017-12-15 10:55:41
+Data Acquisition: Timed
+Station Name: 1000B-20151015.cfg
+Test File Name: Untitled test
+1000kN-B Force 1000kN-B Displacement Time
+kN        mm        Sec
+11.680959 3.6380012 1.0102539
+10.077432 3.2340012 2.0102539
+8.5371475 2.8280013 3.0102539
+7.0007839 2.4240012 4.0102539
+5.4729438 2.0240011 5.0102539
+
+
+Data Header:                                                Time:     5.0375977 Sec       2017-12-15 10:55:52
+Data Acquisition: Timed
+Station Name: 1000B-20151015.cfg
+Test File Name: Untitled test
+1000kN-B Force 1000kN-B Displacement Time
+kN        mm        Sec
+4.0105295 1.6360011 1.0107422
+2.5143435 1.2300011 2.0107422
+1.0269883 0.82600111 3.0107422
+-0.52016306 0.4240011 4.0107422
+-1.9847903 0.024001068 5.0107422
+
+
+Data Header:                                                Time:     5.0375977 Sec       2017-12-15 11:02:21
+Data Acquisition: Timed
+Station Name: 1000B-20151015.cfg
+Test File Name: Untitled test
+1000kN-B Force 1000kN-B Displacement Time
+kN        mm        Sec
+-5.9122558 -1.079999 1.0112305
+-10.204588 -2.2919991 2.0112305
+-14.384673 -3.5059991 3.0112305
+-18.680914 -4.7159991 4.0112305
+-23.119953 -5.921999 5.0112305
+
+
+Data Header:                                                Time:     5.0375977 Sec       2017-12-15 11:02:43
+Data Acquisition: Timed
+Station Name: 1000B-20151015.cfg
+Test File Name: Untitled test
+1000kN-B Force 1000kN-B Displacement Time
+kN        mm        Sec
+-27.403677 -7.0899992 1.0107422
+-31.912552 -8.2959995 2.0107422
+-36.387119 -9.5039997 3.0107422
+-40.678692 -10.707999 4.0107422
+-44.787395 -11.922  5.0107422
+
+
+Data Header:                                                Time:     5.0380859 Sec       2017-12-15 11:03:15
+Data Acquisition: Timed
+Station Name: 1000B-20151015.cfg
+Test File Name: Untitled test
+1000kN-B Force 1000kN-B Displacement Time
+kN        mm        Sec
+-48.159668 -13.085999 1.0112305
+-49.886856 -14.296  2.0112305
+-52.653492 -15.507999 3.0112305
+-55.282825 -16.716  4.0112305
+-57.786823 -17.917999 5.0112305
+
+
+Data Header:                                                Time:     5.0380859 Sec       2017-12-15 11:04:05
+Data Acquisition: Timed
+Station Name: 1000B-20151015.cfg
+Test File Name: Untitled test
+1000kN-B Force 1000kN-B Displacement Time
+kN        mm        Sec
+-60.109322 -19.08   1.0112305
+-62.333904 -20.292  2.0112305
+-64.730263 -21.504  3.0112305
+-67.01059 -22.716   4.0112305
+-69.087784 -23.922001 5.0112305
+
+
+Data Header:                                                Time:     5.0371094 Sec       2017-12-15 11:04:27
+Data Acquisition: Timed
+Station Name: 1000B-20151015.cfg
+Test File Name: Untitled test
+1000kN-B Force 1000kN-B Displacement Time
+kN        mm        Sec
+-70.653252 -25.086  1.0107422
+-71.997513 -26.306  2.0107422
+-72.038383 -27.51   3.0107422
+-71.295258 -28.720001 4.0107422
+-71.441147 -29.926001 5.0107422
+
+
+Data Header:                                                Time:     5.0375977 Sec       2017-12-15 11:04:56
+Data Acquisition: Timed
+Station Name: 1000B-20151015.cfg
+Test File Name: Untitled test
+1000kN-B Force 1000kN-B Displacement Time
+kN        mm        Sec
+-72.08271 -31.082001 1.0107422
+-73.251045 -32.293999 2.0107422
+-74.062737 -33.506001 3.0107422
+-74.685143 -34.716  4.0107422
+-75.336433 -35.924  5.0107422
+
+
+Data Header:                                                Time:     5.0375977 Sec       2017-12-15 11:05:17
+Data Acquisition: Timed
+Station Name: 1000B-20151015.cfg
+Test File Name: Untitled test
+1000kN-B Force 1000kN-B Displacement Time
+kN        mm        Sec
+-76.039413 -37.088001 1.0107422
+-77.204948 -38.299999 2.0107422
+-78.220657 -39.514  3.0107422
+-78.775269 -40.722  4.0107422
+-80.312126 -41.93   5.0107422
+
+
+Data Header:                                                Time:     5.0375977 Sec       2017-12-15 11:05:54
+Data Acquisition: Timed
+Station Name: 1000B-20151015.cfg
+Test File Name: Untitled test
+1000kN-B Force 1000kN-B Displacement Time
+kN        mm        Sec
+-81.2528  -43.086002 1.0107422
+-82.984398 -44.298  2.0107422
+-84.410011 -45.506001 3.0107422
+-85.830322 -46.712002 4.0107422
+-86.599113 -47.920002 5.0107422
+
+
+Data Header:                                                Time:     5.0375977 Sec       2017-12-15 11:06:15
+Data Acquisition: Timed
+Station Name: 1000B-20151015.cfg
+Test File Name: Untitled test
+1000kN-B Force 1000kN-B Displacement Time
+kN        mm        Sec
+-87.559296 -49.088001 1.0112305
+-89.394211 -50.300003 2.0112305
+-90.911995 -51.510002 3.0112305
+-92.469879 -52.718002 4.0112305
+-93.466209 -53.928001 5.0112305
+
+
+Data Header:                                                Time:     5.0375977 Sec       2017-12-15 11:06:38
+Data Acquisition: Timed
+Station Name: 1000B-20151015.cfg
+Test File Name: Untitled test
+1000kN-B Force 1000kN-B Displacement Time
+kN        mm        Sec
+-94.666588 -55.086002 1.0107422
+-96.867279 -56.298  2.0107422
+-98.578064 -57.514  3.0107422
+-98.945396 -58.720001 4.0107422
+-101.08427 -59.924004 5.0107422
+
+
+Data Header:                                                Time:     5.0375977 Sec       2017-12-15 11:07:34
+Data Acquisition: Timed
+Station Name: 1000B-20151015.cfg
+Test File Name: Untitled test
+1000kN-B Force 1000kN-B Displacement Time
+kN        mm        Sec
+-101.53203 -61.086002 1.0112305
+-104.23611 -62.300003 2.0112305
+-106.04136 -63.506001 3.0112305
+-107.81613 -64.716003 4.0112305
+-109.01997 -65.922005 5.0112305
+
+
+Data Header:                                                Time:     5.0375977 Sec       2017-12-15 11:07:53
+Data Acquisition: Timed
+Station Name: 1000B-20151015.cfg
+Test File Name: Untitled test
+1000kN-B Force 1000kN-B Displacement Time
+kN        mm        Sec
+-109.84259 -67.094002 1.0112305
+-112.11588 -68.300003 2.0112305
+-113.65366 -69.508003 3.0112305
+-115.25106 -70.716003 4.0112305
+-116.79309 -71.926003 5.0112305
+
+
+Data Header:                                                Time:     5.0375977 Sec       2017-12-15 11:08:12
+Data Acquisition: Timed
+Station Name: 1000B-20151015.cfg
+Test File Name: Untitled test
+1000kN-B Force 1000kN-B Displacement Time
+kN        mm        Sec
+-116.98589 -73.090004 1.0102539
+-119.26035 -74.296005 2.0102539
+-120.61047 -75.512001 3.0102539
+-122.18396 -76.722  4.0102539
+-123.62551 -77.928001 5.0102539
+
+
+Data Header:                                                Time:     5.0380859 Sec       2017-12-15 11:08:31
+Data Acquisition: Timed
+Station Name: 1000B-20151015.cfg
+Test File Name: Untitled test
+1000kN-B Force 1000kN-B Displacement Time
+kN        mm        Sec
+-123.90565 -79.094002 1.0107422
+-125.96589 -80.304001 2.0107422
+-127.25516 -81.512001 3.0107422
+-128.08066 -82.718002 4.0107422
+-129.08339 -83.924004 5.0107422
+
+
+Data Header:                                                Time:     5.0371094 Sec       2017-12-15 11:08:52
+Data Acquisition: Timed
+Station Name: 1000B-20151015.cfg
+Test File Name: Untitled test
+1000kN-B Force 1000kN-B Displacement Time
+kN        mm        Sec
+-129.16853 -85.086006 1.0102539
+-131.43681 -86.298004 2.0102539
+-132.40303 -87.508003 3.0102539
+-132.92332 -88.714005 4.0102539
+-134.04816 -89.926003 5.0102539
+
+
+Data Header:                                                Time:     5.0380859 Sec       2017-12-15 11:09:11
+Data Acquisition: Timed
+Station Name: 1000B-20151015.cfg
+Test File Name: Untitled test
+1000kN-B Force 1000kN-B Displacement Time
+kN        mm        Sec
+-133.95717 -91.092003 1.0107422
+-136.20053 -92.302002 2.0107422
+-137.06087 -93.512001 3.0107422
+-138.17018 -94.720001 4.0107422
+-138.5116 -95.928001 5.0107422
+
+
+Data Header:                                                Time:     5.0371094 Sec       2017-12-15 11:09:31
+Data Acquisition: Timed
+Station Name: 1000B-20151015.cfg
+Test File Name: Untitled test
+1000kN-B Force 1000kN-B Displacement Time
+kN        mm        Sec
+-138.09604 -97.090004 1.0107422
+-140.31586 -98.300003 2.0107422
+-140.99748 -99.508003 3.0107422
+-141.94138 -100.718 4.0107422
+-142.02553 -101.926 5.0107422
+
+
+Data Header:                                                Time:     5.0371094 Sec       2017-12-15 11:11:00
+Data Acquisition: Timed
+Station Name: 1000B-20151015.cfg
+Test File Name: Untitled test
+1000kN-B Force 1000kN-B Displacement Time
+kN        mm        Sec
+-139.67584 -103.08  1.0107422
+-142.85168 -104.29401 2.0107422
+-144.11884 -105.50401 3.0107422
+-144.73715 -106.716 4.0107422
+-145.47188 -107.922 5.0107422
+
+
+Data Header:                                                Time:     5.0380859 Sec       2017-12-15 11:11:31
+Data Acquisition: Timed
+Station Name: 1000B-20151015.cfg
+Test File Name: Untitled test
+1000kN-B Force 1000kN-B Displacement Time
+kN        mm        Sec
+-144.23592 -109.08601 1.0112305
+-146.55252 -110.298 2.0112305
+-146.46588 -111.50401 3.0112305
+-147.01718 -112.71201 4.0112305
+-147.50185 -113.91801 5.0112305
+
+
+Data Header:                                                Time:     5.0375977 Sec       2017-12-15 11:11:52
+Data Acquisition: Timed
+Station Name: 1000B-20151015.cfg
+Test File Name: Untitled test
+1000kN-B Force 1000kN-B Displacement Time
+kN        mm        Sec
+-146.83009 -115.08601 1.0107422
+-148.12163 -116.29601 2.0107422
+-148.83685 -117.508 3.0107422
+-148.82173 -118.718 4.0107422
+-149.33403 -119.926 5.0107422
+
+
+Data Header:                                                Time:     5.0375977 Sec       2017-12-15 11:13:19
+Data Acquisition: Timed
+Station Name: 1000B-20151015.cfg
+Test File Name: Untitled test
+1000kN-B Force 1000kN-B Displacement Time
+kN        mm        Sec
+-146.65628 -121.078 1.0112305
+-149.22119 -122.29401 2.0112305
+-150.16969 -123.50201 3.0112305
+-150.08853 -124.71001 4.0112305
+-150.04146 -125.91801 5.0112305
+
+
+Data Header:                                                Time:     5.0375977 Sec       2017-12-15 11:13:52
+Data Acquisition: Timed
+Station Name: 1000B-20151015.cfg
+Test File Name: Untitled test
+1000kN-B Force 1000kN-B Displacement Time
+kN        mm        Sec
+-148.00797 -127.08201 1.0112305
+-150.01503 -128.29401 2.0112305
+-149.50262 -129.50601 3.0112305
+-148.40244 -130.714 4.0112305
+-147.3701 -131.92401 5.0112305
+
+
+Data Header:                                                Time:     5.0375977 Sec       2017-12-15 11:14:14
+Data Acquisition: Timed
+Station Name: 1000B-20151015.cfg
+Test File Name: Untitled test
+1000kN-B Force 1000kN-B Displacement Time
+kN        mm        Sec
+-144.54024 -133.08801 1.0107422
+-144.08791 -134.298 2.0107422
+-142.74576 -135.50801 3.0107422
+-141.94395 -136.714 4.0107422
+-140.2699 -137.92401 5.0107422
+
+
+Data Header:                                                Time:     5.0380859 Sec       2017-12-15 11:17:04
+Data Acquisition: Timed
+Station Name: 1000B-20151015.cfg
+Test File Name: Untitled test
+1000kN-B Force 1000kN-B Displacement Time
+kN        mm        Sec
+-136.70692 -139.082 1.0112305
+-138.44868 -140.29201 2.0112305
+-137.61795 -141.50801 3.0112305
+-136.97896 -142.714 4.0112305
+-136.8156 -143.92201 5.0112305
+
+
+Data Header:                                                Time:     5.0375977 Sec       2017-12-15 11:19:08
+Data Acquisition: Timed
+Station Name: 1000B-20151015.cfg
+Test File Name: Untitled test
+1000kN-B Force 1000kN-B Displacement Time
+kN        mm        Sec
+-133.28276 -145.082 1.0107422
+-135.4574 -146.29401 2.0107422
+-135.29257 -147.5   3.0107422
+-134.03328 -148.71201 4.0107422
+-133.99297 -149.92001 5.0107422
+
+
+Data Header:                                                Time:     5.0371094 Sec       2017-12-15 11:19:58
+Data Acquisition: Timed
+Station Name: 1000B-20151015.cfg
+Test File Name: Untitled test
+1000kN-B Force 1000kN-B Displacement Time
+kN        mm        Sec
+-131.91774 -151.078 1.0107422
+-133.4449 -152.29201 2.0107422
+-132.35825 -153.50401 3.0107422
+-132.55209 -154.716 4.0107422
+-131.61124 -155.92401 5.0107422
+
+
+Data Header:                                                Time:     5.0380859 Sec       2017-12-15 11:21:48
+Data Acquisition: Timed
+Station Name: 1000B-20151015.cfg
+Test File Name: Untitled test
+1000kN-B Force 1000kN-B Displacement Time
+kN        mm        Sec
+-129.38667 -157.08  1.0112305
+-131.13802 -158.29001 2.0112305
+-130.73953 -159.50401 3.0112305
+-130.39363 -160.714 4.0112305
+-130.63266 -161.92401 5.0112305
+
+
+Data Header:                                                Time:     5.0375977 Sec       2017-12-15 11:22:51
+Data Acquisition: Timed
+Station Name: 1000B-20151015.cfg
+Test File Name: Untitled test
+1000kN-B Force 1000kN-B Displacement Time
+kN        mm        Sec
+-128.35683 -163.08  1.0107422
+-129.82794 -164.29601 2.0107422
+-129.83688 -165.5   3.0107422
+-129.12366 -166.71201 4.0107422
+-129.32324 -167.92001 5.0107422
+
+
+Data Header:                                                Time:     100.03662 Sec       2017-12-15 11:28:32
+Data Acquisition: Timed
+Station Name: 1000B-20151015.cfg
+Test File Name: Untitled test
+1000kN-B Force 1000kN-B Displacement Time
+kN        mm        Sec
+-115.76662 -166.48001 1.0107422
+-109.30312 -164.78401 2.0107422
+-103.81783 -163.08601 3.0107422
+-98.445473 -161.40001 4.0107422
+-93.002197 -159.70801 5.0107422
+-87.717041 -158.01801 6.0107422
+-82.428932 -156.33  7.0107422
+-77.256538 -154.64401 8.0107422
+-71.940994 -152.95801 9.0107422
+-66.781387 -151.272 10.010742
+-61.64978 -149.586  11.010742
+-56.596073 -147.90001 12.010742
+-51.569759 -146.214 13.010742
+-46.709873 -144.53201 14.010742
+-41.961388 -142.84801 15.010742
+-37.254013 -141.164 16.010742
+-32.652454 -139.48401 17.010742
+-28.102999 -137.804 18.010742
+-23.701714 -136.12001 19.010742
+-19.384165 -134.436 20.010742
+-15.267984 -132.752 21.010742
+-11.276822 -131.07001 22.010742
+-7.3678422 -129.392 23.010742
+-3.6772425 -127.71201 24.010742
+-0.11310694 -126.03001 25.010742
+3.1838737 -124.35001 26.010742
+6.3861084 -122.66801 27.010742
+9.4904222 -120.98601 28.010742
+12.398297 -119.304  29.010742
+15.617503 -117.62401 30.010742
+18.828596 -115.94401 31.010742
+21.772043 -114.26601 32.010742
+24.907858 -112.58401 33.010742
+27.933216 -110.90401 34.010742
+30.885473 -109.22201 35.010742
+33.337227 -107.538  36.010742
+35.931919 -105.86   37.010742
+38.271595 -104.18   38.010742
+40.028248 -102.50201 39.010742
+41.749485 -100.82201 40.010742
+43.179199 -99.140007 41.010742
+44.49395  -97.460007 42.010742
+45.309612 -95.780006 43.010742
+46.298656 -94.098007 44.010742
+47.239975 -92.418007 45.010742
+47.791573 -90.738007 46.010742
+48.626793 -89.060005 47.010742
+49.428417 -87.380005 48.010742
+50.171635 -85.700005 49.010742
+50.685276 -84.018005 50.010742
+51.530357 -82.338005 51.010742
+52.345631 -80.658005 52.010742
+52.937317 -78.978004 53.010742
+53.822964 -77.298004 54.010742
+54.651093 -75.618004 55.010742
+55.226486 -73.942001 56.010742
+56.070271 -72.258003 57.010742
+56.921833 -70.578003 58.010742
+57.669331 -68.898003 59.010742
+58.202381 -67.218002 60.010742
+59.012955 -65.538002 61.010742
+59.666721 -63.858002 62.010742
+60.299679 -62.178001 63.010742
+60.987404 -60.5     64.010742
+61.648346 -58.818001 65.010742
+62.046547 -57.138   66.010742
+62.797333 -55.456001 67.010742
+63.607204 -53.776001 68.010742
+64.320435 -52.098   69.010742
+64.702591 -50.418003 70.010742
+65.336479 -48.740002 71.010742
+65.922714 -47.060001 72.010742
+66.120193 -45.378002 73.010742
+66.646225 -43.695999 74.010742
+67.192848 -42.014   75.010742
+67.392189 -40.334   76.010742
+68.115509 -38.658001 77.010742
+68.585312 -36.976002 78.010742
+68.866463 -35.299999 79.010742
+68.674042 -33.619999 80.010742
+68.954117 -31.938   81.010742
+69.317833 -30.257999 82.010742
+70.003662 -28.578001 83.010742
+71.046005 -26.896   84.010742
+72.066689 -25.218   85.010742
+73.008018 -23.535999 86.010742
+73.698547 -21.858   87.010742
+74.533257 -20.18    88.010742
+75.376602 -18.497999 89.010742
+76.146484 -16.817999 90.010742
+76.796906 -15.136   91.010742
+77.707382 -13.455999 92.010742
+78.639503 -11.778   93.010742
+79.452347 -10.098   94.010742
+80.012344 -8.4199991 95.010742
+80.825867 -6.7399993 96.010742
+81.849373 -5.0579991 97.010742
+82.644669 -3.3779991 98.010742
+83.72081  -1.697999 99.010742
+84.759926 -0.017998934 100.01074
+

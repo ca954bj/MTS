@@ -1,0 +1,232 @@
+MTS793|BTW|CHS|1|0|.|-|:|86|2|1|A
+
+Data Header:                                                Time:     3.0976563 Sec       2017-11-28 15:14:09
+Data Acquisition: Timed
+Station Name: A  & B-tempo 20140725.cfg
+Test File Name: Untitled test.tst
+1000kN-A Force 1000kN-A Displacement 1000kN-B Force 1000kN-B Displacement Time
+kN        mm        kN        mm        Sec
+2.5245497 0.55600327 -1.7213441 -0.57000279 1.0175781
+4.9429646 1.2240033 -3.2136199 -1.2420028 2.0175781
+6.7516589 1.9000033 -4.0188804 -1.9160029 3.0175781
+
+
+Data Header:                                                Time:     3.0561523 Sec       2017-11-28 15:19:29
+Data Acquisition: Timed
+Station Name: A  & B-tempo 20140725.cfg
+Test File Name: Untitled test.tst
+1000kN-A Force 1000kN-A Displacement 1000kN-B Force 1000kN-B Displacement Time
+kN        mm        kN        mm        Sec
+3.7491062 1.4220034 -1.9764518 -1.4060028 1.012207
+1.3341846 0.75800329 -0.73826951 -0.7360028 2.012207
+-1.2704945 0.086003274 0.94540071 -0.064002752 3.012207
+
+
+Data Header:                                                Time:     3.0595703 Sec       2017-11-28 15:24:31
+Data Acquisition: Timed
+Station Name: A  & B-tempo 20140725.cfg
+Test File Name: Untitled test.tst
+1000kN-A Force 1000kN-A Displacement 1000kN-B Force 1000kN-B Displacement Time
+kN        mm        kN        mm        Sec
+0.98764813 0.57400328 -0.80692816 -0.59600276 1.012207
+3.798702  1.2440033 -2.5113113 -1.2660028 2.012207
+6.2983556 1.9180033 -3.8209043 -1.9360029 3.012207
+
+
+Data Header:                                                Time:     3.0561523 Sec       2017-11-28 15:26:38
+Data Acquisition: Timed
+Station Name: A  & B-tempo 20140725.cfg
+Test File Name: Untitled test.tst
+1000kN-A Force 1000kN-A Displacement 1000kN-B Force 1000kN-B Displacement Time
+kN        mm        kN        mm        Sec
+3.6355984 1.4080033 -1.9885243 -1.4000028 1.012207
+1.1329991 0.73800331 -0.65486252 -0.73000276 2.012207
+-1.4865754 0.072003268 1.0005101 -0.056002755 3.012207
+
+
+Data Header:                                                Time:     3.0585938 Sec       2017-11-28 15:31:36
+Data Acquisition: Timed
+Station Name: A  & B-tempo 20140725.cfg
+Test File Name: Untitled test.tst
+1000kN-A Force 1000kN-A Displacement 1000kN-B Force 1000kN-B Displacement Time
+kN        mm        kN        mm        Sec
+2.549741  0.57999676 -1.7462901 -0.59800166 1.0126953
+5.3238168 1.2519968 -3.4490004 -1.2680017 2.0126953
+7.8635683 1.9239968 -4.8007202 -1.9400017 3.0126953
+
+
+Data Header:                                                Time:     3.0585938 Sec       2017-11-28 15:32:15
+Data Acquisition: Timed
+Station Name: A  & B-tempo 20140725.cfg
+Test File Name: Untitled test.tst
+1000kN-A Force 1000kN-A Displacement 1000kN-B Force 1000kN-B Displacement Time
+kN        mm        kN        mm        Sec
+10.200192 2.5719969 -6.0251684 -2.5940018 1.0126953
+11.815954 3.241997  -6.5418348 -3.2720017 2.0126953
+13.432422 3.9179969 -7.0327039 -3.9420018 3.0126953
+
+
+Data Header:                                                Time:     3.059082  Sec       2017-11-28 15:32:46
+Data Acquisition: Timed
+Station Name: A  & B-tempo 20140725.cfg
+Test File Name: Untitled test.tst
+1000kN-A Force 1000kN-A Displacement 1000kN-B Force 1000kN-B Displacement Time
+kN        mm        kN        mm        Sec
+14.577277 4.5759969 -7.3513651 -4.5940018 1.0126953
+16.149942 5.245997  -7.8431215 -5.2660017 2.0126953
+17.610483 5.9199972 -8.4184275 -5.940002 3.0126953
+
+
+Data Header:                                                Time:     3.0585938 Sec       2017-11-28 15:33:20
+Data Acquisition: Timed
+Station Name: A  & B-tempo 20140725.cfg
+Test File Name: Untitled test.tst
+1000kN-A Force 1000kN-A Displacement 1000kN-B Force 1000kN-B Displacement Time
+kN        mm        kN        mm        Sec
+17.913836 6.5799971 -8.4408197 -6.5940018 1.012207
+19.422905 7.2499971 -9.5809526 -7.2660022 2.012207
+21.149605 7.9219971 -11.084531 -7.9380021 3.012207
+
+
+Data Header:                                                Time:     3.0576172 Sec       2017-11-28 15:33:52
+Data Acquisition: Timed
+Station Name: A  & B-tempo 20140725.cfg
+Test File Name: Untitled test.tst
+1000kN-A Force 1000kN-A Displacement 1000kN-B Force 1000kN-B Displacement Time
+kN        mm        kN        mm        Sec
+21.961443 8.5799971 -11.781208 -8.5940018 1.012207
+21.463924 9.2499971 -11.295945 -9.2660017 2.012207
+22.176744 9.9239969 -11.492384 -9.9380026 3.012207
+
+
+Data Header:                                                Time:     3.0581055 Sec       2017-11-28 15:47:27
+Data Acquisition: Timed
+Station Name: A  & B-tempo 20140725.cfg
+Test File Name: Untitled test.tst
+1000kN-A Force 1000kN-A Displacement 1000kN-B Force 1000kN-B Displacement Time
+kN        mm        kN        mm        Sec
+17.431229 9.4039974 -8.5363245 -9.4000025 1.012207
+14.028285 8.7399969 -6.431447 -8.7300024 2.012207
+10.873629 8.0699968 -4.6099696 -8.0580025 3.012207
+
+
+Data Header:                                                Time:     3.0581055 Sec       2017-11-28 15:48:05
+Data Acquisition: Timed
+Station Name: A  & B-tempo 20140725.cfg
+Test File Name: Untitled test.tst
+1000kN-A Force 1000kN-A Displacement 1000kN-B Force 1000kN-B Displacement Time
+kN        mm        kN        mm        Sec
+8.1212816 7.4199972 -3.0377989 -7.4040022 1.012207
+6.137249  6.7439971 -2.3768184 -6.7320018 2.012207
+3.6916904 6.0759969 -1.0669658 -6.0600019 3.012207
+
+
+Data Header:                                                Time:     3.059082  Sec       2017-11-28 15:48:45
+Data Acquisition: Timed
+Station Name: A  & B-tempo 20140725.cfg
+Test File Name: Untitled test.tst
+1000kN-A Force 1000kN-A Displacement 1000kN-B Force 1000kN-B Displacement Time
+kN        mm        kN        mm        Sec
+1.5491837 5.4179969 0.082573391 -5.4020019 1.0126953
+-0.74280083 4.7479968 1.3121405 -4.7320018 2.0126953
+-1.9226886 4.0759969 1.2357795 -4.058002 3.0126953
+
+
+Data Header:                                                Time:     3.0585938 Sec       2017-11-28 15:49:14
+Data Acquisition: Timed
+Station Name: A  & B-tempo 20140725.cfg
+Test File Name: Untitled test.tst
+1000kN-A Force 1000kN-A Displacement 1000kN-B Force 1000kN-B Displacement Time
+kN        mm        kN        mm        Sec
+-2.7606111 3.4179969 0.91880667 -3.4020019 1.012207
+-3.5160074 2.7479968 0.47670227 -2.7320018 2.012207
+-5.32797  2.0739968 1.6243815 -2.0600019 3.012207
+
+
+Data Header:                                                Time:     3.0566406 Sec       2017-11-28 15:49:49
+Data Acquisition: Timed
+Station Name: A  & B-tempo 20140725.cfg
+Test File Name: Untitled test.tst
+1000kN-A Force 1000kN-A Displacement 1000kN-B Force 1000kN-B Displacement Time
+kN        mm        kN        mm        Sec
+-5.9637432 1.4179968 2.0541768 -1.4100018 1.012207
+-6.3898525 0.74799675 2.2904878 -0.73200166 2.012207
+-6.7430959 0.075996742 2.5186529 -0.060001656 3.012207
+
+
+Data Header:                                                Time:     3.0585938 Sec       2017-11-28 15:56:57
+Data Acquisition: Timed
+Station Name: A  & B-tempo 20140725.cfg
+Test File Name: Untitled test.tst
+1000kN-A Force 1000kN-A Displacement 1000kN-B Force 1000kN-B Displacement Time
+kN        mm        kN        mm        Sec
+-12.266192 -0.5820033 -1.7292924 0.59399837 1.0117188
+-14.756474 -1.2540033 0.10777314 1.2659984 2.0117188
+-17.125902 -1.9240034 1.8982685 1.9379984 3.0117188
+
+
+Data Header:                                                Time:     3.0581055 Sec       2017-11-28 15:57:30
+Data Acquisition: Timed
+Station Name: A  & B-tempo 20140725.cfg
+Test File Name: Untitled test.tst
+1000kN-A Force 1000kN-A Displacement 1000kN-B Force 1000kN-B Displacement Time
+kN        mm        kN        mm        Sec
+-19.26511 -2.5820034 3.5648706 2.5939984 1.0117188
+-21.642521 -3.2480035 5.3427896 3.2659986 2.0117188
+-24.347454 -3.9240034 6.0577683 3.9399986 3.0117188
+
+
+Data Header:                                                Time:     3.059082  Sec       2017-11-28 15:59:55
+Data Acquisition: Timed
+Station Name: A  & B-tempo 20140725.cfg
+Test File Name: Untitled test.tst
+1000kN-A Force 1000kN-A Displacement 1000kN-B Force 1000kN-B Displacement Time
+kN        mm        kN        mm        Sec
+-26.215061 -4.5760036 7.7577653 4.5959988 1.012207
+-27.859434 -5.2480035 9.706522 5.2659984 2.012207
+-30.156157 -5.9180036 11.570931 5.9379988 3.012207
+
+
+Data Header:                                                Time:     3.0585938 Sec       2017-11-28 16:00:24
+Data Acquisition: Timed
+Station Name: A  & B-tempo 20140725.cfg
+Test File Name: Untitled test.tst
+1000kN-A Force 1000kN-A Displacement 1000kN-B Force 1000kN-B Displacement Time
+kN        mm        kN        mm        Sec
+-32.202896 -6.5800037 13.408167 6.5939984 1.0117188
+-34.322075 -7.2520037 15.462111 7.2659988 2.0117188
+-36.329189 -7.9200034 17.350376 7.9379988 3.0117188
+
+
+Data Header:                                                Time:     3.0585938 Sec       2017-11-28 16:00:51
+Data Acquisition: Timed
+Station Name: A  & B-tempo 20140725.cfg
+Test File Name: Untitled test.tst
+1000kN-A Force 1000kN-A Displacement 1000kN-B Force 1000kN-B Displacement Time
+kN        mm        kN        mm        Sec
+-38.087605 -8.5800037 19.059748 8.6019983 1.0126953
+-40.087326 -9.2520037 21.040049 9.2679987 2.0126953
+-42.009209 -9.9200039 22.935196 9.9379988 3.0126953
+
+
+Data Header:                                                Time:     3.0581055 Sec       2017-11-28 16:24:52
+Data Acquisition: Timed
+Station Name: A  & B-tempo 20140725.cfg
+Test File Name: Untitled test.tst
+1000kN-A Force 1000kN-A Displacement 1000kN-B Force 1000kN-B Displacement Time
+kN        mm        kN        mm        Sec
+-32.275009 -8.5460033 16.19763 8.5079985 1.012207
+-25.455307 -6.8640037 10.475028 6.8199987 2.012207
+-19.151855 -5.1820035 5.5751543 5.1479988 3.012207
+
+
+Data Header:                                                Time:     3.0566406 Sec       2017-11-28 16:25:28
+Data Acquisition: Timed
+Station Name: A  & B-tempo 20140725.cfg
+Test File Name: Untitled test.tst
+1000kN-A Force 1000kN-A Displacement 1000kN-B Force 1000kN-B Displacement Time
+kN        mm        kN        mm        Sec
+-13.127275 -3.5540035 1.4660587 3.5119984 1.012207
+-7.0432868 -1.8720033 -2.3540432 1.8299985 2.012207
+-1.0286882 -0.19200328 -5.7588282 0.15199836 3.012207
+
