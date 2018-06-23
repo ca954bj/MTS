@@ -4,7 +4,7 @@ outfile = "/media/chenting/Work/Structural Engineering/Beam-CFSConnection/MTS Da
 inputfiles2 = "/media/chenting/Work/Structural Engineering/Beam-CFSConnection/MTS Data/d1206.dat"
 outfile2 = "/media/chenting/Work/Structural Engineering/Beam-CFSConnection/MTS Data/New1206.txt"
 
-inputfiles2FE = "/media/chenting/Work/Structural Engineering/Beam-CFSConnection/MTS Data/SX1-1FEData.txt"
+inputfiles2FE = "/media/chenting/Work/Structural Engineering/Beam-CFSConnection/MTS Data/SX1-1FELoadDisp.txt"
 inputfilesFE = "/media/chenting/Work/Structural Engineering/Beam-CFSConnection/MTS Data/Sy1-1FEData.txt"
 
 inputfiletr2 = "/media/chenting/Work/Structural Engineering/Beam-CFSConnection/MTS Data/SX1-1TheoreticalInitialStiffness.txt"
@@ -134,7 +134,7 @@ plt.plot(reverse1, reverse2, color='black', label='Right Beam', marker='^', mark
 p1 = mlines.Line2D([], [], color='black', marker='^', markersize=10, label='Right Beam')
 #plt.plot(data2.Uy2, data2.Fy2, color='black', label='Left Beam', marker='v', markersize=10, markevery=(45, 40))
 #p2 = mlines.Line2D([], [], color='black', marker='v', markersize=10, label='Left Beam')
-plt.plot(FE1x, FE1y, color='black', marker='o', markersize=10, label='FEM', markevery=(30, 50))
+plt.plot(FE1x, FE1y, color='black', marker='o', markersize=10, label='FEM', markevery=(45, 40))
 p3 = mlines.Line2D([], [], color='black', marker='o', markersize=10, label='FEM')
 
 #p4, = plt.plot(Tr2x, Tr2y, color='y', label='Theoretical Initial Stiffness')
