@@ -4,20 +4,20 @@ import matplotlib.font_manager as fm
 import matplotlib.lines as mlines
 
 
-S1UFile = "/media/chenting/Work/Structural Engineering/Beam-CFSConnection/MTS Data/SteelRodStress1u.txt"
+S1UFile = "/media/chenting/Work/Structural Engineering/Beam-CFSConnection/MTS Data/SX1UU.txt"
 
-S1MFile = "/media/chenting/Work/Structural Engineering/Beam-CFSConnection/MTS Data/SteelRodStress1m.txt"
+S1MFile = "/media/chenting/Work/Structural Engineering/Beam-CFSConnection/MTS Data/SX1UM.txt"
 
-S1BFile = "/media/chenting/Work/Structural Engineering/Beam-CFSConnection/MTS Data/SteelRodStress1b.txt"
+S1BFile = "/media/chenting/Work/Structural Engineering/Beam-CFSConnection/MTS Data/SX1UD.txt"
 
-S2UFile = "/media/chenting/Work/Structural Engineering/Beam-CFSConnection/MTS Data/NB1.txt"
-S2MFile = "/media/chenting/Work/Structural Engineering/Beam-CFSConnection/MTS Data/NB2.txt"
-S2BFile = "/media/chenting/Work/Structural Engineering/Beam-CFSConnection/MTS Data/NB3.txt"
+S2UFile = "/media/chenting/Work/Structural Engineering/Beam-CFSConnection/MTS Data/SX1DU.txt"
+S2MFile = "/media/chenting/Work/Structural Engineering/Beam-CFSConnection/MTS Data/SX1DM.txt"
+S2BFile = "/media/chenting/Work/Structural Engineering/Beam-CFSConnection/MTS Data/SX1DD.txt"
 
 T1UFile = "/media/chenting/Work/Structural Engineering/Beam-CFSConnection/MTS Data/SY1UpperISUpperPoint.txt"
 T1DFile = "/media/chenting/Work/Structural Engineering/Beam-CFSConnection/MTS Data/SY1LowerISUpperPoint.txt"
 
-MTSLoadFile = "/media/chenting/Work/Structural Engineering/Beam-CFSConnection/MTS Data/SteelRodStressMTSForce.txt"
+MTSLoadFile = "/media/chenting/Work/Structural Engineering/Beam-CFSConnection/MTS Data/SX1TimeLoad.txt"
 
 fontpath = '/usr/share/fonts/truetype/msttcorefonts/Arial.ttf'
 fontprop = fm.FontProperties(family='Arial', fname=fontpath, size=16)
@@ -91,7 +91,7 @@ for line in fn:
     content = line.split()
     if len(content) > 1:
         MTSStep.append(float(content[0]))
-        MTSForce.append(float(content[1])/1000)
+        MTSForce.append(float(content[1]))
 fn.close()
 
 ### ===================================================================================================================
@@ -244,75 +244,103 @@ for line in fn:
         T1DD.append(content[3])
 fn.close()
 
+T1Load = [float(i) for i in T1Load[1:-1]]
+T1UU = [float(i) for i in T1UU[1:-1]]
+T1UM = [float(i) for i in T1UM[1:-1]]
+T1UD = [float(i) for i in T1UD[1:-1]]
+T1DU = [float(i) for i in T1DU[1:-1]]
+T1DM = [float(i) for i in T1DM[1:-1]]
+T1DD = [float(i) for i in T1DD[1:-1]]
+
+# ===================================================== Search for Points for SX1-1 ==============================================
+Positions = [12.5, 0, -12.5]
+LoadLevels = [25, 50, 75, 100]
+ForceByLevels = []
+IndexByLevels = []
+StressForPositions = []
+
+for obj in LoadLevels:
+    StressForPositions.append([])
+    TempForce = min(MTSForce, key=lambda x: abs(x - obj))
+    TempIndex = MTSForce.index(TempForce)
+    ForceByLevels.append(TempForce)
+    IndexByLevels.append(TempIndex)
+    StressForPositions[-1].append(S1UStressg[TempIndex])
+    StressForPositions[-1].append(S1MStressg[TempIndex])
+    StressForPositions[-1].append(S1BStressg[TempIndex])
+    StressForPositions[-1].append(S2UStressg[TempIndex])
+    StressForPositions[-1].append(S2MStressg[TempIndex])
+    StressForPositions[-1].append(S2BStressg[TempIndex])
+
+
+print(IndexByLevels)
+print(ForceByLevels)
+print(StressForPositions)
+
 # ===================================================== Plot Curves ====================================================
 # ======= First Plot =============
 ax1 = plt.subplot(1, 2, 1)
 
-plt.plot(MTSForce, S1UStressg, color='black', linestyle='-', label='S1U', marker='^', markersize=10, markevery=(325, 400))
-p1 = mlines.Line2D([], [], color='black', marker='^', markersize=10)
+for i in range(0, len(LoadLevels)):
+    plt.plot(StressForPositions[i][0:3], Positions, color='black', linestyle='-', label='S1U', marker='o', markersize=10)
+    plt.plot(StressForPositions[i][3:6], Positions, color='black', linestyle='--', label='S1U', marker='o', markersize=10)
 
-plt.plot(MTSForce, S1MStressg, color='black', linestyle='-', label='S1M', marker='v', markersize=10, markevery=(325, 400))
-p2 = mlines.Line2D([], [], color='black', marker='v', markersize=10)
+#p1 = mlines.Line2D([], [], color='black', marker='^', markersize=10)
 
-plt.plot(MTSForce, S1BStressg, color='black', linestyle='-', label='S1B', marker='o', markersize=10, markevery=(325, 400))
-p3 = mlines.Line2D([], [], color='black', marker='o', markersize=10)
+plt.xlim(-50, 300)
+plt.ylim(-15, 15)
+plt.xlabel('Stress (MPa)', fontproperties=fontprop)
+plt.ylabel('Position in the Section of Steel Rod (mm)', fontproperties=fontprop)
 
-for i in range(162, 327):
-    S2UStressg[i] = S2UStressg[161] + S1UStressg[i] - S1UStressg[161]
-    S2MStressg[i] = S2MStressg[161] + S1MStressg[i] - S1MStressg[161]
-    S2BStressg[i] = S2BStressg[161] + S1BStressg[i] - S1BStressg[161]
+#legend1 = plt.legend(handles=[p1, p2, p3], loc=1, bbox_to_anchor=(0.25, 1.02), prop=fontprop, frameon=False)
+#legend2 = plt.legend(handles=[p4, p5, p6], loc=1, bbox_to_anchor=(0.25, 0.75), prop=fontprop, frameon=False)
 
-plt.plot(MTSForce, S2UStressg, color='black', linestyle='--', label='S2U', dashes=(10, 10))
-p4 = mlines.Line2D([], [], color='black', linestyle='--')
-
-dash2 = plt.plot(MTSForce, S2MStressg, color='black', linestyle='--', label='S2M')
-dash2[0].set_dashes([10, 6, 3, 6])
-p5 = mlines.Line2D([], [], color='black', linestyle='-.')
-
-dash3 = plt.plot(MTSForce, S2BStressg, color='black', linestyle=':', label='S2B')
-dash3[0].set_dashes([3, 5, 3, 5])
-p6 = mlines.Line2D([], [], color='black', linestyle=':')
-
-plt.xlim(0, 140)
-plt.ylim(-50, 400)
-plt.xlabel('MTS Load (kN)', fontproperties=fontprop)
-plt.ylabel('Stress of the Steel Rod (MPa)', fontproperties=fontprop)
-
-legend1 = plt.legend(handles=[p1, p2, p3], loc=1, bbox_to_anchor=(0.25, 1.02), prop=fontprop, frameon=False)
-legend2 = plt.legend(handles=[p4, p5, p6], loc=1, bbox_to_anchor=(0.25, 0.75), prop=fontprop, frameon=False)
-
-plt.gca().add_artist(legend1)
-plt.gca().add_artist(legend2)
-ax1.yaxis.set_label_coords(-0.1, 0.5)
+#plt.gca().add_artist(legend1)
+#plt.gca().add_artist(legend2)
+#ax1.yaxis.set_label_coords(-0.1, 0.5)
 
 plt.grid()
+
+# ================================================== Search for Points for SY1-1 ==============================================
+Positions = [50, 0, -50]
+LoadLevels = [25, 50, 75, 100]
+ForceByLevels = []
+IndexByLevels = []
+StressForPositions = []
+
+for obj in LoadLevels:
+    StressForPositions.append([])
+    TempForce = min(T1Load, key=lambda x: abs(x - obj))
+    TempIndex = T1Load.index(TempForce)
+    ForceByLevels.append(TempForce)
+    IndexByLevels.append(TempIndex)
+    StressForPositions[-1].append(T1UU[TempIndex])
+    StressForPositions[-1].append(T1UM[TempIndex])
+    StressForPositions[-1].append(T1UD[TempIndex])
+    StressForPositions[-1].append(T1DU[TempIndex])
+    StressForPositions[-1].append(T1DM[TempIndex])
+    StressForPositions[-1].append(T1DD[TempIndex])
+
+
+print(IndexByLevels)
+print(ForceByLevels)
+print(StressForPositions)
 
 # ================================================== The second plot for SY1-1
 ax2 = plt.subplot(1, 2, 2)
-plt.plot(T1Load[1:-1], T1UU[1:-1], color='black', linestyle='-', label='S1U', marker='v', markersize=10, markevery=(20, 20))
-p1 = mlines.Line2D([], [], color='black', marker='^', markersize=10)
 
-plt.plot(T1Load[1:-1], T1UM[1:-1], color='black', linestyle='-', label='S1M', marker='o', markersize=10, markevery=(20, 20))
-p2 = mlines.Line2D([], [], color='black', marker='v', markersize=10)
+for i in range(0, len(LoadLevels)):
+    plt.plot(StressForPositions[i][0:3], Positions, color='black', linestyle='-', label='S1U', marker='o', markersize=10)
+    plt.plot(StressForPositions[i][3:6], Positions, color='black', linestyle='--', label='S1U', marker='o', markersize=10)
 
-plt.plot(T1Load[1:-1], T1UD[1:-1], color='black', linestyle='-', label='S1B', marker='^', markersize=10, markevery=(20, 20))
-p3 = mlines.Line2D([], [], color='black', marker='o', markersize=10)
+#p1 = mlines.Line2D([], [], color='black', marker='^', markersize=10)
 
-plt.plot(T1Load[1:-1], T1DU[1:-1], color='black', linestyle=':', label='S1U')
-p4 = mlines.Line2D([], [], color='black', marker='^', markersize=10)
-
-plt.plot(T1Load[1:-1], T1DM[1:-1], color='black', linestyle='-.', label='S1M')
-p5 = mlines.Line2D([], [], color='black', marker='v', markersize=10)
-
-plt.plot(T1Load[1:-1], T1DD[1:-1], color='black', linestyle='--', label='S1B')
-p6 = mlines.Line2D([], [], color='black', marker='o', markersize=10)
-
-plt.subplots_adjust(left=0.08, right=0.97, wspace=0.22, hspace=0.1, bottom=0.12, top=0.95)
+plt.xlim(-50, 300)
+#plt.ylim(-15, 15)
+plt.xlabel('Stress (MPa)', fontproperties=fontprop)
+plt.ylabel('Position in the Section of Internal Stiffener (mm)', fontproperties=fontprop)
 plt.grid()
-plt.xlim(0, 140)
-plt.ylim(-50, 400)
-plt.xlabel('MTS Load (kN)', fontproperties=fontprop)
-plt.ylabel('Stress of the Internal Stiffener (MPa)', fontproperties=fontprop)
+plt.subplots_adjust(left=0.08, right=0.98, wspace=0.22, hspace=0.1, bottom=0.12, top=0.95)
 
 plt.show()
 

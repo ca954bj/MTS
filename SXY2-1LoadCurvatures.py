@@ -3,6 +3,9 @@ import matplotlib.pyplot as plt
 import matplotlib.font_manager as fm
 import matplotlib.lines as mlines
 
+SY1ExpLoadCurvatureData = "/media/chenting/Work/Structural Engineering/Beam-CFSConnection/MTS Data/SY1-1ExpLoadCurvatureData.txt"
+
+SX1ExpLoadCurvatureData = "/media/chenting/Work/Structural Engineering/Beam-CFSConnection/MTS Data/SX1-1ExpLoadCurvatureData.txt"
 
 SY2ExpLoadCurvatureData = "/media/chenting/Work/Structural Engineering/Beam-CFSConnection/MTS Data/SY2-1ExpLoadCurvatureData.txt"
 
@@ -16,6 +19,25 @@ fontpath = '/usr/share/fonts/truetype/msttcorefonts/Arial.ttf'
 fontprop = fm.FontProperties(family='Arial', fname=fontpath, size=16)
 mpl.rcParams.update({'font.size': 16, 'font.family': 'Arial'})
 plt.figure(figsize=(11, 5))
+
+ExpSYx1 = []
+ExpSYy1 = []
+ExpSY1 = open(SY1ExpLoadCurvatureData)
+for line in ExpSY1:
+    nums = line.split()
+    if len(nums) > 1:
+        ExpSYx1.append(float(nums[0]))
+        ExpSYy1.append(float(nums[1])*1.95)
+
+ExpSXx1 = []
+ExpSXy1 = []
+ExpSX1 = open(SX1ExpLoadCurvatureData)
+for line in ExpSX1:
+    nums = line.split()
+    if len(nums) > 1:
+        ExpSXx1.append(float(nums[0]))
+        ExpSXy1.append(float(nums[1])*1.84)
+
 
 FESYx = []
 FESYy = []
@@ -60,15 +82,18 @@ for line in ExpSX:
 
 # Plot SY2-1 Experimental Data
 ax1 = plt.subplot(1, 2, 2)
-plt.plot(ExpSYx[0:-8], ExpSYy[0:-8], color='black', linestyle='-', label='Experiment', markersize=10, markevery=(40, 35))
-p1 = mlines.Line2D([], [], color='black', linestyle='-', markersize=10, label='Experiment')
+plt.plot(ExpSYx[0:-8], ExpSYy[0:-8], color='black', linestyle='-', label='Experiment SY2', markersize=10, markevery=(40, 35))
+p1 = mlines.Line2D([], [], color='black', linestyle='-', markersize=10, label='Experiment SY2')
+
+plt.plot(ExpSYx1[0:-2], ExpSYy1[0:-2], color='black', linestyle='-.', dashes=(10, 5, 3, 5), label='Experiment SY1', markersize=10, markevery=(40, 35))
+p3 = mlines.Line2D([], [], color='black', linestyle='-.', dashes=(10, 5, 3, 5), markersize=10, label='Experiment SY1')
 
 # Plot SY1-1 FE Data
 plt.plot(FESYx, FESYy, color='black', linestyle='--', label='Theoretical', markersize=10, markevery=(40, 35))
 p2 = mlines.Line2D([], [], color='black', linestyle='--', markersize=10, label='Theoretical')
 
 # Plot legend
-plt.legend(handles=[p1, p2], loc=1, bbox_to_anchor=(0.99, 0.3), frameon=False, prop=fontprop)
+plt.legend(handles=[p2, p3, p1], loc=1, bbox_to_anchor=(0.99, 0.3), frameon=False, prop=fontprop)
 
 # Adjust the plot
 plt.grid()
@@ -87,15 +112,18 @@ ax1.yaxis.set_label_coords(-0.1, 0.5)
 # ==================================================================================================
 # Plot SX2-1 Experiment Data
 ax2 = plt.subplot(1, 2, 1)
-plt.plot(ExpSXx, ExpSXy, color='black', linestyle='-', label='Experiment', markersize=10, markevery=(40, 35))
-p1 = mlines.Line2D([], [], color='black', linestyle='-', markersize=10, label='Experiment')
+plt.plot(ExpSXx, ExpSXy, color='black', linestyle='-', label='Experiment SX2', markersize=10, markevery=(40, 35))
+p1 = mlines.Line2D([], [], color='black', linestyle='-', markersize=10, label='Experiment SX2')
 
 # Plot SX1-1 FE Data
 plt.plot(FESXx, FESXy, color='black', linestyle='--', label='Theoretical', markersize=10, markevery=(40, 35))
 p2 = mlines.Line2D([], [], color='black', linestyle='--', markersize=10, label='Theoretical')
 
+plt.plot(ExpSXx1, ExpSXy1, color='black', linestyle='-.', dashes=(10, 5, 3, 5), label='Experiment SX1', markersize=10, markevery=(40, 35))
+p3 = mlines.Line2D([], [], color='black', linestyle='-.', dashes=(10, 5, 3, 5), markersize=10, label='Experiment SX1')
+
 # Plot legend
-plt.legend(handles=[p1, p2], loc=1, bbox_to_anchor=(0.99, 0.3), frameon=False, prop=fontprop)
+plt.legend(handles=[p2, p3, p1], loc=1, bbox_to_anchor=(0.99, 0.3), frameon=False, prop=fontprop)
 
 # Adjust the plot
 plt.grid()
