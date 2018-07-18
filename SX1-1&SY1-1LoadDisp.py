@@ -129,20 +129,20 @@ for i in range(0, len(data2.Uy1)):
     reverse1.append(-(data2.Uy1[i]))
     reverse2.append(-(data2.Fy1[i]))
 
+data2uy2g = []
+for i in range(0, len(data2.Uy2)):
+    data2uy2g.append(data2.Uy2[i] - 1)
+
 #Uy2[0:-200]
-plt.plot(reverse1, reverse2, color='black', label='Right Beam', marker='^', markersize=10, markevery=(45, 40))
+plt.plot(reverse1[40:], reverse2[40:], color='black', label='Right Beam', marker='^', markersize=10, markevery=(45, 40))
 p1 = mlines.Line2D([], [], color='black', marker='^', markersize=10, label='Right Beam')
-#plt.plot(data2.Uy2, data2.Fy2, color='black', label='Left Beam', marker='v', markersize=10, markevery=(45, 40))
-#p2 = mlines.Line2D([], [], color='black', marker='v', markersize=10, label='Left Beam')
+plt.plot(data2uy2g[61:], data2.Fy2[61:], color='black', label='Left Beam', marker='v', markersize=10, markevery=(45, 40))
+p2 = mlines.Line2D([], [], color='black', marker='v', markersize=10, label='Left Beam')
 plt.plot(FE1x, FE1y, color='black', marker='o', markersize=10, label='FEM', markevery=(45, 40))
 p3 = mlines.Line2D([], [], color='black', marker='o', markersize=10, label='FEM')
 
-#p4, = plt.plot(Tr2x, Tr2y, color='y', label='Theoretical Initial Stiffness')
-#p5, = plt.plot(Trrm2x, Trrm2y, color = 'black', label='Modelling', marker='s', markersize=10, markevery=(40, 10))
-plt.legend(handles=[p1, p3], loc=1, bbox_to_anchor=(0.99, 0.3), prop=fontprop)
-#legend2 = plt.legend(handles=[p4, p5], loc=1, bbox_to_anchor=(0.98, 0.22), prop=fontprop)
-#plt.gca().add_artist(legend1)
-#plt.gca().add_artist(legend2)
+plt.legend(handles=[p1, p2, p3], loc=1, bbox_to_anchor=(0.99, 0.3), prop=fontprop)
+
 plt.grid()
 plt.ylim(0, 180)
 plt.xlim(0, 135)
