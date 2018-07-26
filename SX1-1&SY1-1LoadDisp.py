@@ -75,23 +75,27 @@ data1 = readfile(inputfiles, outfile, difflimit)
 print(data1.Uy1)
 print(data1.Uy2)
 
+data1Uy1g = []
+for i, obj in enumerate(data1.Uy1):
+    data1Uy1g.append(obj*(1-0.074))
+
 plt.figure(figsize=(11, 5))
 
 ax1 = plt.subplot(1, 2, 2)
 reverse1 = []
 reverse2 = []
 for i in range(0, len(data1.Uy2)):
-    reverse1.append(-(data1.Uy2[i]))
-    reverse2.append(-(data1.Fy2[i]))
+    reverse1.append((-(data1.Uy2[i]) - 4)*(1-0.074))
+    reverse2.append(-(data1.Fy2[i]) - 4)
 
 #Uy1[0:-100]
 
 # Plot Right Beam Experimental Data
-plt.plot(data1.Uy1, data1.Fy1, color='black', label='Right Beam', marker='^', markersize=10, markevery=(40, 35))
+plt.plot(data1Uy1g, data1.Fy1, color='black', label='Right Beam', marker='^', markersize=10, markevery=(40, 35))
 p1 = mlines.Line2D([], [], color='black', marker='^', markersize=10, label='Right Beam')
 
 # Plot Left Beam Experimental Data
-plt.plot(reverse1, reverse2, color='black', label='Left Beam', marker='v', markersize=10, markevery=(40, 35))
+plt.plot(reverse1[5:], reverse2[5:], color='black', label='Left Beam', marker='v', markersize=10, markevery=(40, 35))
 p2 = mlines.Line2D([], [], color='black', marker='v', markersize=10, label='Left Beam')
 
 # Plot Detailed FE Data
@@ -126,12 +130,12 @@ ax2 = plt.subplot(1, 2, 1)
 reverse1 = []
 reverse2 = []
 for i in range(0, len(data2.Uy1)):
-    reverse1.append(-(data2.Uy1[i]))
+    reverse1.append(-(data2.Uy1[i])*(1-0.074))
     reverse2.append(-(data2.Fy1[i]))
 
 data2uy2g = []
 for i in range(0, len(data2.Uy2)):
-    data2uy2g.append(data2.Uy2[i] - 1)
+    data2uy2g.append((data2.Uy2[i] - 1)*(1-0.074))
 
 #Uy2[0:-200]
 plt.plot(reverse1[40:], reverse2[40:], color='black', label='Right Beam', marker='^', markersize=10, markevery=(45, 40))
