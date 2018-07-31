@@ -5,7 +5,7 @@ inputfiles2 = "/media/chenting/Work/Structural Engineering/Beam-CFSConnection/MT
 outfile2 = "/media/chenting/Work/Structural Engineering/Beam-CFSConnection/MTS Data/New1206.txt"
 
 inputfiles2FE = "/media/chenting/Work/Structural Engineering/Beam-CFSConnection/MTS Data/SX1-1FELoadDisp.txt"
-inputfilesFE = "/media/chenting/Work/Structural Engineering/Beam-CFSConnection/MTS Data/Sy1-1FEData.txt"
+inputfilesFE = "/media/chenting/Work/Structural Engineering/Beam-CFSConnection/MTS Data/SY1-1FELoadDisp.txt"
 
 inputfiletr2 = "/media/chenting/Work/Structural Engineering/Beam-CFSConnection/MTS Data/SX1-1TheoreticalInitialStiffness.txt"
 inputfiletr1 = "/media/chenting/Work/Structural Engineering/Beam-CFSConnection/MTS Data/SY1-1TheoreticalInitialStiffness.txt"
@@ -99,7 +99,7 @@ plt.plot(reverse1[5:], reverse2[5:], color='black', label='Left Beam', marker='v
 p2 = mlines.Line2D([], [], color='black', marker='v', markersize=10, label='Left Beam')
 
 # Plot Detailed FE Data
-plt.plot(FE2x, FE2y, color='black', label='FEM', marker='o', markersize=10, markevery=(12, 10))
+plt.plot(FE2x, FE2y, color='black', label='FEM', marker='o', markersize=10, markevery=(40, 25))
 p3 = mlines.Line2D([], [], color='black', marker='o', markersize=10, label='FEM')
 
 # Plot Rigid Connection Curve
