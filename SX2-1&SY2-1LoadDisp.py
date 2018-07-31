@@ -5,7 +5,7 @@ inputfiles2 = "/media/chenting/Work/Structural Engineering/Beam-CFSConnection/MT
 outfile2 = "/media/chenting/Work/Structural Engineering/Beam-CFSConnection/MTS Data/New1218.txt"
 
 inputfiletrrm1 = "/media/chenting/Work/Structural Engineering/Beam-CFSConnection/MTS Data/SX2-1FELoadDisp.txt"
-inputfiletrrm2 = "/media/chenting/Work/Structural Engineering/Beam-CFSConnection/MTS Data/SY2FELoad-Disp.txt"
+inputfiletrrm2 = "/media/chenting/Work/Structural Engineering/Beam-CFSConnection/MTS Data/SY2-1FELoadDisp.txt"
 
 execfile('MTSsetup2.py')
 difflimit = 20
@@ -14,7 +14,7 @@ data1 = readfile(inputfiles, outfile, difflimit)
 reverse1 = []
 reverse2 = []
 for i in range(0, len(data1.Uy1)):
-    reverse1.append(-(data1.Uy1[i]))
+    reverse1.append(-(data1.Uy1[i]*(1-0.074)))
     reverse2.append(-(data1.Fy1[i]))
 
 Trrm1x = []
@@ -42,8 +42,8 @@ plt.figure(figsize=(11, 5))
 
 ax1 = plt.subplot(1, 2, 2)
 
-p1, = plt.plot(reverse1[200:-100], reverse2[200:-100], color='black', label='Experiment', marker='^', markersize=10, markevery=(35, 30))
-p5, = plt.plot(Trrm2x, Trrm2y, color = 'black', label='FEM', marker='o', markersize=10, markevery=(10, 10))
+p1, = plt.plot(reverse1[200:-100], reverse2[200:-100], color='black', label='Experiment', marker='^', markersize=10, markevery=(50, 60))
+p5, = plt.plot(Trrm2x, Trrm2y, color = 'black', label='FEM', marker='o', markersize=10, markevery=(30, 30))
 plt.legend(handles=[p1, p5], loc=1, bbox_to_anchor=(0.99, 0.3), prop=fontprop)
 
 plt.grid()
@@ -62,7 +62,7 @@ ax2 = plt.subplot(1, 2, 1)
 reverse1 = []
 reverse2 = []
 for i in range(0, len(data2.Uy1)):
-    reverse1.append(-(data2.Uy1[i]))
+    reverse1.append(-(data2.Uy1[i]*(1-0.074)))
     reverse2.append(-(data2.Fy1[i]))
 #plt.plot(reverse1, reverse2, color='b', label='Right Beam')
 p1, = plt.plot(reverse1[200:-100], reverse2[200:-100], color='black', label='Experiment', marker='^', markersize=10, markevery=(50, 40))

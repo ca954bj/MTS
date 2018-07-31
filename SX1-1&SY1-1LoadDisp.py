@@ -99,7 +99,7 @@ plt.plot(reverse1[5:], reverse2[5:], color='black', label='Left Beam', marker='v
 p2 = mlines.Line2D([], [], color='black', marker='v', markersize=10, label='Left Beam')
 
 # Plot Detailed FE Data
-plt.plot(FE2x, FE2y, color='black', label='FEM', marker='o', markersize=10, markevery=(40, 25))
+plt.plot(FE2x, FE2y, color='black', label='FEM', marker='o', markersize=10, markevery=(40, 18))
 p3 = mlines.Line2D([], [], color='black', marker='o', markersize=10, label='FEM')
 
 # Plot Rigid Connection Curve
