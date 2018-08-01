@@ -254,7 +254,7 @@ T1DD = [float(i) for i in T1DD[1:-1]]
 
 # ===================================================== Search for Points for SX1-1 ==============================================
 Positions = [12.5, 0, -12.5]
-LoadLevels = [25, 50, 75, 100]
+LoadLevels = [25, 50, 75, 100, 125]
 ForceByLevels = []
 IndexByLevels = []
 StressForPositions = []
