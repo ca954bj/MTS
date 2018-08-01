@@ -65,7 +65,7 @@ for i in range(0, len(data2.Uy1)):
     reverse1.append(-(data2.Uy1[i]*(1-0.074)))
     reverse2.append(-(data2.Fy1[i]))
 #plt.plot(reverse1, reverse2, color='b', label='Right Beam')
-p1, = plt.plot(reverse1[200:-100], reverse2[200:-100], color='black', label='Experiment', marker='^', markersize=10, markevery=(50, 40))
+p1, = plt.plot(reverse1[200:-100], reverse2[200:-100], color='black', label='Experiment', marker='^', markersize=10, markevery=(40, 50))
 p5, = plt.plot(Trrm1x, Trrm1y, color = 'black', label='FEM', marker='o', markersize=10, markevery=(60, 60))
 plt.legend(handles=[p1, p5], loc=1, bbox_to_anchor=(0.99, 0.3), prop=fontprop)
 plt.grid()
