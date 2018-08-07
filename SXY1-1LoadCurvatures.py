@@ -3,6 +3,9 @@ import matplotlib.pyplot as plt
 import matplotlib.font_manager as fm
 import matplotlib.lines as mlines
 
+SectionMy = 229.192042857143
+SectionMu = 255.76575
+SectionMyX = [1e-6*i for i in range(0, 30)]
 
 SY1ExpLoadCurvatureData = "/media/chenting/Work/Structural Engineering/Beam-CFSConnection/MTS Data/SY1-1ExpLoadCurvatureData.txt"
 
@@ -57,20 +60,31 @@ for line in ExpSX:
 
 #Uy1[0:-100]
 
-# Plot SY1-1 Experimental Data
-ax1 = plt.subplot(1, 2, 2)
-plt.plot(ExpSYx[0:-2], ExpSYy[0:-2], color='black', linestyle='-', label='Experiment', markersize=10, markevery=(40, 35))
-p1 = mlines.Line2D([], [], color='black', linestyle='-', markersize=10, label='Experiment')
+# ======================= Plot SY1-1 Experimental Data ============
+ax1 = plt.subplot(1, 2, 1)
+#plt.plot(ExpSYx[0:-2], ExpSYy[0:-2], color='black', linestyle='-', marker='^', label='Experiment', markersize=10, markevery=(26, 10))
+#p1 = mlines.Line2D([], [], color='black', linestyle='-', marker='^', markersize=10, label='Experiment')
+plt.plot(ExpSYx[0:-2], ExpSYy[0:-2], color='black', linestyle='-')
+plt.text(3.1e-5, 281, 'SY1 Experiment')
 
-# Plot SY1-1 FE Data
-plt.plot(FESYx, FESYy, color='black', linestyle='--', label='Theoretical', markersize=10, markevery=(40, 35))
-p2 = mlines.Line2D([], [], color='black', linestyle='--', markersize=10, label='Theoretical')
+# ======================= Plot SY1-1 FE Data ==============
+#plt.plot(FESYx, FESYy, color='black', linestyle='-', label='Theoretical', marker='o', markersize=10, markevery=(30, 10))
+#p2 = mlines.Line2D([], [], color='black', linestyle='-', marker='o', markersize=10, label='Theoretical')
+plt.plot(FESYx, FESYy, color='black', linestyle='-')
+plt.text(3.7e-5, 243, 'Theoretical')
 
-# Plot legend
-plt.legend(handles=[p1, p2], loc=1, bbox_to_anchor=(0.99, 0.3), frameon=False, prop=fontprop)
+# ======================= Plot SX1-1 FE Data ============
+#plt.plot(ExpSXx, ExpSXy, color='black', linestyle='-', label='Experiment', marker='v', markersize=10, markevery=(26, 10))
+#p3 = mlines.Line2D([], [], color='black', linestyle='-', marker='v', markersize=10, label='Experiment')
+plt.plot(ExpSXx, ExpSXy, color='black', linestyle='-')
+plt.text(1.8e-5, 160, 'SX1 Experiment')
+
+# ======================= Plot legend ==================
+#plt.legend(handles=[p1, p2], loc=1, bbox_to_anchor=(0.99, 0.3), frameon=False, prop=fontprop)
+plt.plot(SectionMyX, [SectionMu]*len(SectionMyX), linestyle='--')
+plt.plot(SectionMyX, [SectionMy]*len(SectionMyX), linestyle='-.')
 
 # Adjust the plot
-plt.grid()
 plt.ylim(0, 320)
 plt.xlim(0, 0.00005)
 plt.xticks([0, 0.00001, 0.00002, 0.00003, 0.00004, 0.00005], fontproperties=fontprop)
@@ -85,7 +99,7 @@ ax1.yaxis.set_label_coords(-0.1, 0.5)
 
 # ==================================================================================================
 # Plot SX1-1 Experiment Data
-ax2 = plt.subplot(1, 2, 1)
+ax2 = plt.subplot(1, 2, 2)
 plt.plot(ExpSXx, ExpSXy, color='black', linestyle='-', label='Experiment',  markersize=10, markevery=(1, 1))
 p1 = mlines.Line2D([], [], color='black', linestyle='-', markersize=10, label='Experiment')
 

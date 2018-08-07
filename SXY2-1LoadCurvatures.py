@@ -3,6 +3,10 @@ import matplotlib.pyplot as plt
 import matplotlib.font_manager as fm
 import matplotlib.lines as mlines
 
+SectionMy = 229.192042857143
+SectionMu = 255.76575
+SectionMyX = [1e-6*i for i in range(0, 50)]
+
 SY1ExpLoadCurvatureData = "/media/chenting/Work/Structural Engineering/Beam-CFSConnection/MTS Data/SY1-1ExpLoadCurvatureData.txt"
 
 SX1ExpLoadCurvatureData = "/media/chenting/Work/Structural Engineering/Beam-CFSConnection/MTS Data/SX1-1ExpLoadCurvatureData.txt"
@@ -91,6 +95,10 @@ p3 = mlines.Line2D([], [], color='black', linestyle='-.', dashes=(10, 5, 3, 5), 
 # Plot SY1-1 FE Data
 plt.plot(FESYx, FESYy, color='black', linestyle='--', label='Theoretical', markersize=10, markevery=(40, 35))
 p2 = mlines.Line2D([], [], color='black', linestyle='--', markersize=10, label='Theoretical')
+plt.plot(SectionMyX, [SectionMu]*len(SectionMyX), linestyle='-.', dashes=(15, 10, 15, 10), color='black')
+plt.plot(SectionMyX, [SectionMy]*len(SectionMyX), linestyle='-.', dashes=(15, 10, 15, 10), color='black')
+plt.text(2.8e-5, 210, "Yield Initiation")
+plt.text(2.8e-5, 240, "Full Plastic Moment")
 
 # Plot legend
 plt.legend(handles=[p2, p3, p1], loc=1, bbox_to_anchor=(0.99, 0.3), frameon=False, prop=fontprop)
@@ -121,6 +129,13 @@ p2 = mlines.Line2D([], [], color='black', linestyle='--', markersize=10, label='
 
 plt.plot(ExpSXx1, ExpSXy1, color='black', linestyle='-.', dashes=(10, 5, 3, 5), label='Experiment SX1', markersize=10, markevery=(40, 35))
 p3 = mlines.Line2D([], [], color='black', linestyle='-.', dashes=(10, 5, 3, 5), markersize=10, label='Experiment SX1')
+
+# Plot yielding initiation and full plastic moment
+plt.plot(SectionMyX, [SectionMu]*len(SectionMyX), linestyle='-.', dashes=(15, 10, 15, 10), color='black')
+plt.plot(SectionMyX, [SectionMy]*len(SectionMyX), linestyle='-.', dashes=(15, 10, 15, 10), color='black')
+plt.text(0.8e-6, 210, "Yield Initiation")
+plt.text(0.8e-6, 260, "Full Plastic Moment")
+
 
 # Plot legend
 plt.legend(handles=[p2, p3, p1], loc=1, bbox_to_anchor=(0.99, 0.3), frameon=False, prop=fontprop)
