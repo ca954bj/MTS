@@ -2,6 +2,7 @@ execfile("/media/chenting/Work/ProgramCode/Tools/Interpolation.py")
 execfile('MTSsetup2.py')
 
 import matplotlib.pyplot as plt
+from scipy.optimize import curve_fit
 
 # 120kN -> 1.34093
 # 90kN -> 1.18334
@@ -230,6 +231,18 @@ for obj in Mz3:
     ofile.write("%f " % obj)
 ofile.close()
 
+del X3[7]
+del Fx3[7]
+del Mz3[7]
+
+del X2[7]
+del Fx2[7]
+del Mz2[7]
+
+del X1[7]
+del Fx1[7]
+del Mz1[7]
+
 # ============================== Steel Rods =================================
 X7 = []
 Fx7 = []
@@ -252,6 +265,9 @@ for line in f7:
 Fx7.reverse()
 Mz7.reverse()
 
+def fitfunction(x, a, b, c, d, e, f, g):
+    return a*x**6 + b*x**5 + c*x**4 + d*x**3 + e*x**2 + f*x + g
+
 # ========================================= Plot Figures ======================================
 
 plt.figure(figsize=(11, 5))
@@ -267,12 +283,17 @@ plt.ylabel('Axial Load (kN)', fontproperties=fontprop)
 #plt.yticks([0, 30, 60, 90, 120, 150, 180], fontproperties=fontprop)
 
 plt.subplot(1, 2, 2)
-plt.plot(X1, Mz1, color='black')
-plt.plot(X2, Mz2, color='black')
-plt.plot(X3, Mz3, color='black')
+
 plt.plot(X7, Mz7, color='black', linestyle='--')
+popt, pcov = curve_fit(fitfunction, X1, Mz1)
+plt.plot(X1, map(lambda x: fitfunction(x, *popt), X1), color='black')
+popt, pcov = curve_fit(fitfunction, X2, Mz2)
+plt.plot(X2, map(lambda x: fitfunction(x, *popt), X2), color='black')
+popt, pcov = curve_fit(fitfunction, X3, Mz3)
+plt.plot(X3, map(lambda x: fitfunction(x, *popt), X3), color='black')
+
 plt.grid()
-plt.ylim(-20, 5)
+plt.ylim(-12, 2)
 plt.xlim(-250, 250)
 plt.xticks([-250, -200, -150, -100, -50, 0, 50, 100, 150, 200, 250], fontproperties=fontprop)
 plt.xlabel('Position in Stiffened Member (mm)', fontproperties=fontprop)
