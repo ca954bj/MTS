@@ -22,3 +22,8 @@ SX1-1 Not Available
 SX1-2 Specimen-SX1Newf.cae
 SX2-1 Specimen-SX2New.cae
 SY2-1 Specimen-SY2T.cae
+
+Latest py file
+/media/chenting/Work/ProgramCode/AbaqusInpScript/AbaqusInpScript-SY1.py
+/media/chenting/Work/ProgramCode/AbaqusInpScript/AbaqusInpScript-SX1New.py
+
