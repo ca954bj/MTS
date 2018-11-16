@@ -21,6 +21,7 @@ SY1-2 Specimen-SY1-2.cae
 SX1-1 Not Available
 SX1-2 Specimen-SX1Newf.cae
 SX2-1 Specimen-SX2New.cae
+SX2-2 Specimen-SX2-2.cae
 SY2-1 Specimen-SY2T.cae
 
 Latest py file
