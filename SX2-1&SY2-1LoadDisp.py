@@ -7,6 +7,8 @@ outfile2 = "/media/chenting/Work/Structural Engineering/Beam-CFSConnection/MTS D
 inputfiletrrm1 = "/media/chenting/Work/Structural Engineering/Beam-CFSConnection/MTS Data/SX2-1FELoadDisp.txt"
 inputfiletrrm2 = "/media/chenting/Work/Structural Engineering/Beam-CFSConnection/MTS Data/SY2-1FELoadDisp.txt"
 
+
+
 execfile('MTSsetup2.py')
 difflimit = 20
 data1 = readfile(inputfiles, outfile, difflimit)
@@ -34,6 +36,8 @@ for line in TRrmSX21:
     if len(nums) > 1:
         Trrm2x.append(float(nums[0]))
         Trrm2y.append(float(nums[1]))
+
+
 
 # ====================== Start to Plot ======================================================================
 # ======================= The first plot ====================================================================

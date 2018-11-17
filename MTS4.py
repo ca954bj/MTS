@@ -4,9 +4,13 @@ outfile = "/media/chenting/Work/Structural Engineering/Beam-CFSConnection/MTS Da
 inputfiles2 = "/media/chenting/Work/Structural Engineering/Beam-CFSConnection/MTS Data/d1222.dat"
 outfile2 = "/media/chenting/Work/Structural Engineering/Beam-CFSConnection/MTS Data/New1222.txt"
 
+
+
 execfile('MTSsetup2.py')
 difflimit = 20
 data1 = readfile(inputfiles, outfile, difflimit)
+
+
 
 plt.figure(figsize=(11, 5))
 
@@ -17,6 +21,7 @@ for i in range(0, len(data1.Uy1)-15):
     reverse1.append(-(data1.Uy1[i]))
     reverse2.append(-(data1.Fy1[i]))
 plt.plot(reverse1, reverse2, color='b')
+
 #plt.plot(reverse1, reverse2, color='r', label='Left Beam')
 plt.legend(bbox_to_anchor=(0.5, 1), prop=fontprop)
 plt.grid()
@@ -39,6 +44,7 @@ for i in range(0, len(data2.Uy1)-25):
     reverse2.append(-(data2.Fy1[i]))
 #plt.plot(reverse1, reverse2, color='b', label='Right Beam')
 plt.plot(reverse1, reverse2, color='b')
+
 plt.legend(bbox_to_anchor=(0.5, 1), prop=fontprop)
 plt.grid()
 plt.ylim(-175, 175)

@@ -4,9 +4,28 @@ outfile = "/media/chenting/Work/Structural Engineering/Beam-CFSConnection/MTS Da
 inputfiles2 = "/media/chenting/Work/Structural Engineering/Beam-CFSConnection/MTS Data/d1210.dat"
 outfile2 = "/media/chenting/Work/Structural Engineering/Beam-CFSConnection/MTS Data/New1210.txt"
 
+FEx = "/media/chenting/Work/Structural Engineering/Beam-CFSConnection/MTS Data/SX1-2FELoadDisp.txt"
+FEy = "/media/chenting/Work/Structural Engineering/Beam-CFSConnection/MTS Data/SY1-2FELoadDisp.txt"
+
 execfile('MTSsetup.py')
-difflimit = 50
+difflimit = [60,-1000,90,-10000,1000,-10000]
 data1 = readfile(inputfiles, outfile, difflimit)
+
+FExd = []
+FExl = []
+FEyd = []
+FEyl = []
+FExf = open(FEx)
+FEyf = open(FEy)
+for line in FExf:
+    spl = line.split()
+    FExd.append(float(spl[0]))
+    FExl.append(float(spl[1]))
+
+for line in FEyf:
+    spl = line.split()
+    FEyd.append(float(spl[0]))
+    FEyl.append(float(spl[1]))
 
 plt.figure(figsize=(11, 5))
 
@@ -14,7 +33,8 @@ ax1 = plt.subplot(1, 2, 2)
 #plt.plot(Uy1[0:-180], Fy1[0:-180])
 plt.plot(data1.Uy1[0:-180], data1.Fy1[0:-180], color='b', label='Right Beam')
 plt.plot(data1.Uy2[0:-180], data1.Fy2[0:-180], color='r', label='Left Beam')
-plt.legend(bbox_to_anchor=(1.02, 0.23), prop=fontprop)
+plt.plot(FEyd, FEyl, color='g', label='FE')
+plt.legend(bbox_to_anchor=(1.02, 0.3), prop=fontprop)
 plt.grid()
 plt.ylim(-175, 175)
 plt.xlim(-180, 180)
@@ -31,7 +51,8 @@ ax2 = plt.subplot(1, 2, 1)
 #plt.plot(Uy2[0:-200], Fy2[0:-200])
 plt.plot(data2.Uy1[0:-180], data2.Fy1[0:-180], color='b', label='Right Beam')
 plt.plot(data2.Uy2[0:-180], data2.Fy2[0:-180], color='r', label='Left Beam')
-plt.legend(bbox_to_anchor=(1.02, 0.23), prop=fontprop)
+plt.plot(FExd, FExl, color='g', label='FE')
+plt.legend(bbox_to_anchor=(1.02, 0.3), prop=fontprop)
 plt.grid()
 plt.xlim(-180, 180)
 plt.ylim(-175, 175)
