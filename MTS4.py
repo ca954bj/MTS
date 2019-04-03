@@ -4,6 +4,25 @@ outfile = "/media/chenting/Work/Structural Engineering/Beam-CFSConnection/MTS Da
 inputfiles2 = "/media/chenting/Work/Structural Engineering/Beam-CFSConnection/MTS Data/d1222.dat"
 outfile2 = "/media/chenting/Work/Structural Engineering/Beam-CFSConnection/MTS Data/New1222.txt"
 
+FEx = "/media/chenting/Work/Structural Engineering/Beam-CFSConnection/MTS Data/SX2-2FELoadDisp.txt"
+FEy = "/media/chenting/Work/Structural Engineering/Beam-CFSConnection/MTS Data/SY2-2FELoadDisp.txt"
+
+FExd = []
+FExl = []
+FEyd = []
+FEyl = []
+FExf = open(FEx)
+FEyf = open(FEy)
+for line in FExf:
+    spl = line.split()
+    FExd.append(float(spl[0]))
+    FExl.append(float(spl[1]))
+
+for line in FEyf:
+    spl = line.split()
+    FEyd.append(float(spl[0]))
+    FEyl.append(float(spl[1]))
+
 
 
 execfile('MTSsetup2.py')
@@ -21,10 +40,11 @@ for i in range(0, len(data1.Uy1)-15):
     reverse1.append(-(data1.Uy1[i]))
     reverse2.append(-(data1.Fy1[i]))
 plt.plot(reverse1, reverse2, color='b')
+plt.plot(FExd, FEyl, color='g', label='FE')
 
 #plt.plot(reverse1, reverse2, color='r', label='Left Beam')
 plt.legend(bbox_to_anchor=(0.5, 1), prop=fontprop)
-plt.grid()
+plt.grid(linestyle='dotted')
 plt.ylim(-175, 175)
 plt.xlim(-180, 180)
 plt.xticks([-180, -120, -60, 0, 60, 120, 180], fontproperties=fontprop)
@@ -46,7 +66,7 @@ for i in range(0, len(data2.Uy1)-25):
 plt.plot(reverse1, reverse2, color='b')
 
 plt.legend(bbox_to_anchor=(0.5, 1), prop=fontprop)
-plt.grid()
+plt.grid(linestyle='dotted')
 plt.ylim(-175, 175)
 plt.xlim(-180, 180)
 plt.xticks([-180, -120, -60, 0, 60, 120, 180], fontproperties=fontprop)
