@@ -26,10 +26,8 @@ ax1 = plt.subplot(1, 1, 1)
 
 plt.plot(data[1], data[0], color='black', label='Experiment', linestyle='-', marker='^', markersize=7)
 plt.plot(data[2], data[0], color='black', label='Experiment', linestyle='-', marker='o', markersize=7)
-plt.plot(data[3], data[0], color='black', label='Experiment', linestyle='-', marker='v', markersize=7)
 plt.plot(data[4], data[0], color='black', label='Experiment', linestyle='--', marker='^', markersize=7)
 plt.plot(data[5], data[0], color='black', label='Experiment', linestyle='--', marker='o', markersize=7)
-plt.plot(data[6], data[0], color='black', label='Experiment', linestyle='--', marker='v', markersize=7)
 
 plt.yticks([i for i in range(0, 110, 10)], fontproperties=fontprop)
 plt.xticks([float(i)/50*1000 for i in range(-10, 60, 10)], fontproperties=fontprop)
