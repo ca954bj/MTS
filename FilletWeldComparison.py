@@ -12,10 +12,14 @@ data = []
 
 for j, line in enumerate(content):
     temp = line.split()
-    if j == 0:
-        data.append([float(i) for i in temp])
-    else:
-        data.append([float(i)/50 for i in temp])
+    data.append([float(i) for i in temp])
+        
+for i in range(1, 7):
+    for j in range(0, 11):
+        if j == 0 or j == 10:
+            data[i][j] = data[i][j]/50
+        else:
+            data[i][j] = data[i][j]/100
 
 plt.figure(figsize=(6, 5))
 ax1 = plt.subplot(1, 1, 1)
@@ -33,7 +37,7 @@ plt.xticks([float(i)/50*1000 for i in range(-10, 60, 10)], fontproperties=fontpr
 plt.ylim(0, 100)
 plt.xlim(-200, 1000)
 plt.ylabel('Position (mm)', fontproperties=fontprop)
-plt.xlabel('Stress (MPa)', fontproperties=fontprop)
+plt.xlabel('Average Shear Stress (MPa)', fontproperties=fontprop)
 ax1.yaxis.set_label_coords(-0.07, 0.5)
 plt.grid(linestyle='--')
 plt.subplots_adjust(left=0.13, right=0.96, wspace=0.22, hspace=0.1, bottom=0.12, top=0.95)
