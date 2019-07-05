@@ -85,7 +85,10 @@ ax2.yaxis.set_label_coords(-0.12, 0.5)
 # Integration, Area Calculation
 data1i = []
 for i, obj in enumerate(data1.Uy1):
-    da = data1.Uy1[i]*data1.Fy1[1]/1000 + data1.Uy2[i]*data1.Fy2[1]/1000
+    if i==0:
+        da = data1.Uy1[i]*data1.Fy1[i]/1000 + data1.Uy2[i]*data1.Fy2[i]/1000
+    else:
+        da = (data1.Uy1[i]-data1.Uy1[i-1])*data1.Fy1[i]/1000 + (data1.Uy2[i]-data1.Uy2[i-1])*data1.Fy2[i]/1000
     if len(data1i) == 0:
         data1i.append(da)
     else:
@@ -97,17 +100,20 @@ plt.plot(data1.Uy1[0:-180], data1i[0:-180], color='k', linestyle='-')
 #plt.plot(FEyd, FEyl, color='g', label='FE')
 plt.legend(bbox_to_anchor=(1.02, 0.3), prop=fontprop)
 plt.grid(linestyle='--')
-plt.ylim(-20, 500)
+#plt.ylim(-20, 500)
 plt.xlim(-180, 180)
 plt.xticks([-180, -120, -60, 0, 60, 120, 180], fontproperties=fontprop)
-plt.yticks([0, 100, 200, 300, 400, 500], fontproperties=fontprop)
+#plt.yticks([0, 100, 200, 300, 400, 500], fontproperties=fontprop)
 plt.xlabel('Vertical Displacement (mm)', fontproperties=fontprop)
-plt.ylabel('Energy Dissapation (N*m)', fontproperties=fontprop)
+plt.ylabel('Energy Dissapation (kN*m)', fontproperties=fontprop)
 ax3.yaxis.set_label_coords(-0.12, 0.5)
 
 data2i = []
 for i, obj in enumerate(data2.Uy1):
-    da = data2.Uy1[i]*data2.Fy1[1]/1000 + data2.Uy2[i]*data2.Fy2[1]/1000
+    if i==0:
+        da = data2.Uy1[i]*data2.Fy1[i]/1000 + data2.Uy2[i]*data2.Fy2[i]/1000
+    else:
+        da = (data2.Uy1[i]-data2.Uy1[i-1])*data2.Fy1[i]/1000 + (data2.Uy2[i]-data2.Uy2[i-1])*data2.Fy2[i]/1000
     if len(data2i) == 0:
         data2i.append(da)
     else:
@@ -119,12 +125,12 @@ plt.plot(data2.Uy1[0:-180], data2i[0:-180], color='k', linestyle='-')
 #plt.plot(FEyd, FEyl, color='g', label='FE')
 plt.legend(bbox_to_anchor=(1.02, 0.3), prop=fontprop)
 plt.grid(linestyle='--')
-plt.ylim(-20, 500)
+#plt.ylim(-20, 500)
 plt.xlim(-180, 180)
 plt.xticks([-180, -120, -60, 0, 60, 120, 180], fontproperties=fontprop)
-plt.yticks([0, 100, 200, 300, 400, 500], fontproperties=fontprop)
+#plt.yticks([0, 100, 200, 300, 400, 500], fontproperties=fontprop)
 plt.xlabel('Vertical Displacement (mm)', fontproperties=fontprop)
-plt.ylabel('Energy Dissapation (N*m)', fontproperties=fontprop)
+plt.ylabel('Energy Dissapation (kN*m)', fontproperties=fontprop)
 ax4.yaxis.set_label_coords(-0.12, 0.5)
 
 
