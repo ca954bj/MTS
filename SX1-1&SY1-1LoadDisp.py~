@@ -164,5 +164,5 @@ ax2.yaxis.set_label_coords(-0.1, 0.5)
 
 plt.subplots_adjust(left=0.08, right=0.98, wspace=0.22, hspace=0.1, bottom=0.12, top=0.95)
 
-cc
+plt.show()
 
