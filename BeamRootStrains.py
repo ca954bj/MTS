@@ -14,12 +14,12 @@ for num, line in enumerate(content):
 		sym = float(data[0])
 		DataSX1[sym] = []
 		for obj in data[1:]:
-			DataSX1[sym].append(float(obj))
+			DataSX1[sym].append(-float(obj))
 	elif num >= 5:
 		sym = float(data[0])
 		EDataSX1[sym] = []
 		for obj in data[1:]:
-			EDataSX1[sym].append(float(obj))
+			EDataSX1[sym].append(-float(obj))
 
 DataSY1 = {}
 EDataSY1 = {}
@@ -30,12 +30,12 @@ for num, line in enumerate(content):
 		sym = float(data[0])
 		DataSY1[sym] = []
 		for obj in data[1:]:
-			DataSY1[sym].append(float(obj))
+			DataSY1[sym].append(-float(obj))
 	elif num >= 5:
 		sym = float(data[0])
 		EDataSY1[sym] = []
 		for obj in data[1:]:
-			EDataSY1[sym].append(float(obj))
+			EDataSY1[sym].append(-float(obj))
 		
 DataSX2 = {}
 EDataSX2 = {}
@@ -46,13 +46,13 @@ for num, line in enumerate(content):
 		sym = float(data[0])
 		DataSX2[sym] = []
 		for obj in data[1:]:
-			DataSX2[sym].append(float(obj))
+			DataSX2[sym].append(-float(obj))
 	elif num >= 5:
 		sym = float(data[0])
 		print("len", len(data))
 		EDataSX2[sym] = []
 		for obj in data[1:]:
-			EDataSX2[sym].append(float(obj))
+			EDataSX2[sym].append(-float(obj))
 
 DataSY2 = {}
 EDataSY2 = {}
@@ -63,12 +63,12 @@ for num, line in enumerate(content):
 		sym = float(data[0])
 		DataSY2[sym] = []
 		for obj in data[1:]:
-			DataSY2[sym].append(float(obj))
+			DataSY2[sym].append(-float(obj))
 	elif num >= 5:
 		sym = float(data[0])
 		EDataSY2[sym] = []
 		for obj in data[1:]:
-			EDataSY2[sym].append(float(obj))
+			EDataSY2[sym].append(-float(obj))
 			
 print(EDataSX2)
 		
@@ -80,10 +80,10 @@ p12,= plt.plot(DataSX1[60], DataSX1[0], color='black', label='60kN', linestyle='
 p13,= plt.plot(DataSX1[80], DataSX1[0], color='black', label='80kN', linestyle='dashed')
 p14,= plt.plot(DataSX1[100], DataSX1[0], color='black', label='100kN', linestyle='dotted')
 
-p11e,= plt.plot(EDataSX1[40][0:-1], EDataSX1[0][0:-1], color='black', linestyle='None', marker='s', markersize=7, label='40kN')
-p12e,= plt.plot(EDataSX1[60][0:-1], EDataSX1[0][0:-1], color='black', linestyle='None', marker='^', markersize=7, label='60kN')
-p13e,= plt.plot(EDataSX1[80][0:-1], EDataSX1[0][0:-1], color='black', linestyle='None', marker='v', markersize=7, label='80kN')
-p14e,= plt.plot(EDataSX1[100][0:-1], EDataSX1[0][0:-1], color='black', linestyle='None', marker='o', markersize=7, label='100kN')
+p11e,= plt.plot(EDataSX1[40][1:], EDataSX1[0][1:], color='black', linestyle='None', marker='s', markersize=7, label='40kN')
+p12e,= plt.plot(EDataSX1[60][1:], EDataSX1[0][1:], color='black', linestyle='None', marker='^', markersize=7, label='60kN')
+p13e,= plt.plot(EDataSX1[80][1:], EDataSX1[0][1:], color='black', linestyle='None', marker='v', markersize=7, label='80kN')
+p14e,= plt.plot(EDataSX1[100][1:], EDataSX1[0][1:], color='black', linestyle='None', marker='o', markersize=7, label='100kN')
 
 plt.grid(linestyle = "--")
 plt.ylim(-200, 200)
@@ -130,10 +130,10 @@ p12,= plt.plot(DataSY1[60], DataSY1[0], color='black', label='60kN', linestyle='
 p13,= plt.plot(DataSY1[80], DataSY1[0], color='black', label='80kN', linestyle='dashed')
 p14,= plt.plot(DataSY1[100], DataSY1[0], color='black', label='100kN', linestyle='dotted')
 
-p11e,= plt.plot(EDataSY1[40][0:-1], EDataSY1[0][0:-1], color='black', linestyle='None', marker='s', markersize=7, label='40kN')
-p12e,= plt.plot(EDataSY1[60][0:-1], EDataSY1[0][0:-1], color='black', linestyle='None', marker='^', markersize=7, label='60kN')
-p13e,= plt.plot(EDataSY1[80][0:-1], EDataSY1[0][0:-1], color='black', linestyle='None', marker='v', markersize=7, label='80kN')
-p14e,= plt.plot(EDataSY1[100][0:-1], EDataSY1[0][0:-1], color='black', linestyle='None', marker='o', markersize=7, label='100kN')
+p11e,= plt.plot(EDataSY1[40][1:], EDataSY1[0][1:], color='black', linestyle='None', marker='s', markersize=7, label='40kN')
+p12e,= plt.plot(EDataSY1[60][1:], EDataSY1[0][1:], color='black', linestyle='None', marker='^', markersize=7, label='60kN')
+p13e,= plt.plot(EDataSY1[80][1:], EDataSY1[0][1:], color='black', linestyle='None', marker='v', markersize=7, label='80kN')
+p14e,= plt.plot(EDataSY1[100][1:], EDataSY1[0][1:], color='black', linestyle='None', marker='o', markersize=7, label='100kN')
 
 firstlegend = plt.legend(handles=[p11, p12, p13, p14], loc=1, bbox_to_anchor=(0.35, 0.99), prop=fontprop, title='FE:', frameon=False)
 secondlegend = plt.legend(handles=[p11e, p12e, p13e, p14e], loc=1, bbox_to_anchor=(0.98, 0.45), prop=fontprop, title='Exp:', frameon=False)
