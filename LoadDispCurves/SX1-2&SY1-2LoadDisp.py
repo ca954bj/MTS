@@ -35,21 +35,23 @@ print(data1.Uy2[3500:3520])
 
 Fy2s = [(data2.Fy1[i] - data2.Fy2[i])*4660.0/2820.0 for i in range(0, 3200)]
 Fy1s = [(data1.Fy1[i] - data1.Fy2[i])*4660.0/2820.0 for i in range(0, 3520)]
+Uy2s = [data2.Uy1[i]/2330.0 for i in range(0, 3200)]
+Uy1s = [data1.Uy1[i]/2330.0 for i in range(0, 3520)]
 
 plt.figure(figsize=(11, 11))
 
 ax1 = plt.subplot(2, 2, 2)
 #plt.plot(Uy1[0:-180], Fy1[0:-180])
 #plt.plot(data1.Uy1[0:-180], data1.Fy1[0:-180], color='k', linestyle='-', label='Right Beam')
-plt.plot(data1.Uy1[0:3520], Fy1s[0:3520], color='k', linestyle='-', label='Left Beam')
+plt.plot(Uy1s, Fy1s, color='k', linestyle='-', label='Left Beam')
 #plt.plot(FEyd, FEyl, color='g', label='FE')
 #plt.legend(bbox_to_anchor=(1.02, 0.3), prop=fontprop)
 plt.grid(linestyle='--')
 plt.ylim(-500, 500)
-plt.xlim(-180, 180)
-plt.xticks([-180, -120, -60, 0, 60, 120, 180], fontproperties=fontprop)
+plt.xlim(-0.075, 0.075)
+plt.xticks([-0.075, -0.05, -0.025, 0, 0.025, 0.05, 0.075], ['-7.5', '-5', '-2.5', '0', '2.5', '5', '7.5'], fontproperties=fontprop)
 plt.yticks([-500, -400, -300, -200, -100, 0, 100, 200, 300, 400, 500], fontproperties=fontprop)
-plt.xlabel('Vertical Displacement (mm)', fontproperties=fontprop)
+plt.xlabel('Equivalent Story Drift Angle (%)', fontproperties=fontprop)
 plt.ylabel('Equivalent Story Shear Force (kN)', fontproperties=fontprop)
 ax1.yaxis.set_label_coords(-0.14, 0.5)
 
@@ -77,16 +79,16 @@ for i, obj in enumerate(data2.Uy2):
 
 ax2 = plt.subplot(2, 2, 1)
 #plt.plot(Uy2[0:-200], Fy2[0:-200])
-plt.plot(data2.Uy1[0:3200], Fy2s, color='k', linestyle='-', label='Right Beam')
+plt.plot(Uy2s, Fy2s, color='k', linestyle='-', label='Right Beam')
 #plt.plot(FExd, FExl, color='g', label='FE')
 #plt.legend(bbox_to_anchor=(1.02, 0.3), prop=fontprop)
 plt.grid(linestyle='--')
-plt.xlim(-180, 180)
+plt.xlim(-0.075, 0.075)
 plt.ylim(-500, 500)
 #plt.xlim(0, 180)
-plt.xticks([-180, -120, -60, 0, 60, 120, 180], fontproperties=fontprop)
+plt.xticks([-0.075, -0.05, -0.025, 0, 0.025, 0.05, 0.075], ['-7.5', '-5', '-2.5', '0', '2.5', '5', '7.5'], fontproperties=fontprop)
 plt.yticks([-500, -400, -300, -200, -100, 0, 100, 200, 300, 400, 500], fontproperties=fontprop)
-plt.xlabel('Vertical Displacement (mm)', fontproperties=fontprop)
+plt.xlabel('Equivalent Story Drift Angle (%)', fontproperties=fontprop)
 plt.ylabel('Equivalent Story Shear Force (kN)', fontproperties=fontprop)
 ax2.yaxis.set_label_coords(-0.14, 0.5)
 
@@ -104,15 +106,15 @@ for i, obj in enumerate(data1.Uy1):
         
 # The third graph
 ax3 = plt.subplot(2, 2, 4)
-plt.plot(data1.Uy1[0:3520], data1i[0:3520], color='k', linestyle='-')
+plt.plot(Uy1s, data1i[0:3520], color='k', linestyle='-')
 #plt.plot(FEyd, FEyl, color='g', label='FE')
 plt.legend(bbox_to_anchor=(1.02, 0.3), prop=fontprop)
 plt.grid(linestyle='--')
 #plt.ylim(-20, 500)
-plt.xlim(-180, 180)
-plt.xticks([-180, -120, -60, 0, 60, 120, 180], fontproperties=fontprop)
+plt.xlim(-0.075, 0.075)
+plt.xticks([-0.075, -0.05, -0.025, 0, 0.025, 0.05, 0.075], ['-7.5', '-5', '-2.5', '0', '2.5', '5', '7.5'], fontproperties=fontprop)
 #plt.yticks([0, 100, 200, 300, 400, 500], fontproperties=fontprop)
-plt.xlabel('Vertical Displacement (mm)', fontproperties=fontprop)
+plt.xlabel('Equivalent Story Drift Angle (%)', fontproperties=fontprop)
 plt.ylabel('Energy Dissapation (kN*m)', fontproperties=fontprop)
 ax3.yaxis.set_label_coords(-0.14, 0.5)
 
@@ -129,15 +131,15 @@ for i, obj in enumerate(data2.Uy1):
         
 # The Fourth graph
 ax4 = plt.subplot(2, 2, 3)
-plt.plot(data2.Uy1[0:3200], data2i[0:3200], color='k', linestyle='-')
+plt.plot(Uy2s, data2i[0:3200], color='k', linestyle='-')
 #plt.plot(FEyd, FEyl, color='g', label='FE')
 plt.legend(bbox_to_anchor=(1.02, 0.3), prop=fontprop)
 plt.grid(linestyle='--')
 #plt.ylim(-20, 500)
-plt.xlim(-180, 180)
-plt.xticks([-180, -120, -60, 0, 60, 120, 180], fontproperties=fontprop)
+plt.xlim(-0.075, 0.075)
+plt.xticks([-0.075, -0.05, -0.025, 0, 0.025, 0.05, 0.075], ['-7.5', '-5', '-2.5', '0', '2.5', '5', '7.5'], fontproperties=fontprop)
 #plt.yticks([0, 100, 200, 300, 400, 500], fontproperties=fontprop)
-plt.xlabel('Vertical Displacement (mm)', fontproperties=fontprop)
+plt.xlabel('Equivalent Story Drift Angle (%)', fontproperties=fontprop)
 plt.ylabel('Energy Dissapation (kN*m)', fontproperties=fontprop)
 ax4.yaxis.set_label_coords(-0.14, 0.5)
 
