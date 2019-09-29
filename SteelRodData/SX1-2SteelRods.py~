@@ -1,0 +1,23 @@
+execfile("/media/chenting/Work/ProgramCode/Tools/Interpolation.py")
+
+filelocation = "/media/chenting/Work/Structural Engineering/Beam-CFSConnection/MTS Data/New1210.txt"
+
+fn = open(filelocation, 'r')
+
+disp = []
+moment = []
+
+for line in fn:
+	numbers = split(line)
+	if len(numbers) > 0:
+		load1 = float(numbers[0])
+		disp1 = float(numbers[1])
+		load2 = float(numbers[2])
+		disp2 = float(numbers[3])
+		if abs(disp1) > 39:
+			break
+		disp.append(0.5 * (disp1 - disp2))
+		moment.append(4.66 * (load1 - load2))
+
+print(disp)
+print(moment)
