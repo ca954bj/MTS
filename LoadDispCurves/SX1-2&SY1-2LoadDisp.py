@@ -8,6 +8,7 @@ FEx = "/media/chenting/Work/Structural Engineering/Beam-CFSConnection/MTS Data/S
 FEy = "/media/chenting/Work/Structural Engineering/Beam-CFSConnection/MTS Data/SY1-2FELoadDisp.txt"
 
 execfile('../MTSsetup.py')
+execfile('/media/chenting/Work/ProgramCode/Tools/Interpolation.py')
 difflimit = [60,-1000,90,-10000,1000,-10000]
 data1 = readfile(inputfiles, outfile, difflimit)
 data2 = readfile(inputfiles2, outfile2, difflimit)
@@ -94,15 +95,19 @@ ax2.yaxis.set_label_coords(-0.14, 0.5)
 
 # Integration, Area Calculation
 data1i = []
+print("SY1-2")
 for i, obj in enumerate(data1.Uy1):
     if i==0:
         da = data1.Uy1[i]*data1.Fy1[i]/1000 + data1.Uy2[i]*data1.Fy2[i]/1000
     else:
-        da = (data1.Uy1[i]-data1.Uy1[i-1])*data1.Fy1[i]/1000 + (data1.Uy2[i]-data1.Uy2[i-1])*data1.Fy2[i]/1000
+        da = (data1.Uy1[i]-data1.Uy1[i-1])*(data1.Fy1[i]+data1.Fy1[i-1])*0.5/1000 + (data1.Uy2[i]-data1.Uy2[i-1])*(data1.Fy2[i]+data1.Fy2[i-1])*0.5/1000
     if len(data1i) == 0:
         data1i.append(da)
     else:
         data1i.append(data1i[-1]+da)
+    if i>20 and data1.Uy1[i]*data1.Uy1[i-1]<=0:
+    	Eg = LinearInterpolation2D(data1.Uy1[i-1], data1i[-2], data1.Uy1[i], data1i[-1], 0)
+    	print(Eg)
         
 # The third graph
 ax3 = plt.subplot(2, 2, 4)

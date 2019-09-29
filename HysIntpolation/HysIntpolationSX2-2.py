@@ -1,7 +1,7 @@
 import numpy as np
 
-data1 = np.loadtxt('/media/chenting/Work/Structural Engineering/Beam-CFSConnection/MTS Data/New1213.txt')
-data2 = np.loadtxt('/media/chenting/Work/Structural Engineering/Beam-CFSConnection/MTS Data/Beam-CFSSY1-2.txt')
+data1 = np.loadtxt('/media/chenting/Work/Structural Engineering/Beam-CFSConnection/MTS Data/HysIntpolation/New1220g.txt')
+data2 = np.loadtxt('/media/chenting/Work/Structural Engineering/Beam-CFSConnection/MTS Data/HysIntpolation/Beam-CFSSX2-2.txt')
 
 lens = data1.shape[0]
 Force = np.zeros((lens, 1))
@@ -25,7 +25,7 @@ for i in range(1, lens):
         elif subtractset[-1] == 1 and subtractset[-2] == 0:
             switch1.append(i)
 
-dellist = []
+'''dellist = []
 for i in range(1, len(switch1)):
     if switch1[i] - switch1[i - 1] < 10 and i > 10 and i <= 1000:
         if switch1[i-1] not in dellist:
@@ -38,23 +38,9 @@ for i in range(1, len(switch1)):
         if switch1[i] not in dellist:
             dellist.append(switch1[i])
 
-switch1.append(87)
-switch1.append(102)
-switch1.append(150)
-switch1.append(1188)
-switch1.append(2879)
-switch1.append(3342)
-switch1 = sorted(switch1)
-
-dellist.append(63)
-dellist.append(66)
-dellist.append(70)
-dellist.append(72)
-dellist.append(3025)
-
 
 for i in range(0, len(dellist)):
-    switch1.remove(dellist[i])
+    switch1.remove(dellist[i])'''
 
 print('switch1 = ', switch1)
 
@@ -121,5 +107,5 @@ for i in range(1, len(switch2)):
               'Force = %f' % Force[switch2[i - 1] + j, 0])
         j = j + 1
 
-        np.savetxt('/media/chenting/Work/Structural Engineering/Beam-CFSConnection/MTS Data/Beam-CFSSY1-2-Load.txt', Force)
+        np.savetxt('/media/chenting/Work/Structural Engineering/Beam-CFSConnection/MTS Data/HysIntpolation/Beam-CFSSX2-2-Load.txt', Force)
 
