@@ -34,8 +34,8 @@ plt.xlim(0, 0.065)
 plt.xticks([0, 0.01, 0.02, 0.03, 0.04, 0.05, 0.06], ['0', '1', '2', '3', '4', '5', '6'], fontproperties=fontprop)
 plt.yticks([0, 5000, 10000, 15000, 20000, 25000, 30000, 35000], fontproperties=fontprop)
 
-plt.xlabel('Equivalent Story Drift Ratio (%)', fontproperties=fontprop)
-plt.ylabel('Secant Stiffness (kN)', fontproperties=fontprop)
+plt.xlabel('Story Drift Ratio (%)', fontproperties=fontprop)
+plt.ylabel('Secant Stiffness (kN/rad)', fontproperties=fontprop)
 
 plt.legend(handles=[p1, p2, p3, p4], loc=1, bbox_to_anchor=(0.99, 0.95), prop=fontprop)
 plt.subplots_adjust(left=0.15, right=0.98, wspace=0.22, hspace=0.1, bottom=0.12, top=0.95)
