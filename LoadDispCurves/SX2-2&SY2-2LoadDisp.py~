@@ -44,17 +44,7 @@ for line in TRrmSX21:
         Trrm2x.append(float(nums[0]))
         Trrm2y.append(float(nums[1]))
 
-# ========================================================================================================
 
-fileout = "ShearForceSX2-2.txt"
-filep1 = open(fileout, 'w')
-for i, obj in enumerate(reverse1[0:-25]):
-    filep1.write("%f %f\n" % (obj, reverse2[i]))
-
-fileout = "ShearForceSY2-2.txt"
-filep2 = open(fileout, 'w')
-for i, obj in enumerate(reverse3[0:-25]):
-    filep2.write("%f %f\n" % (obj, reverse4[i]))
 
 # ====================== Start to Plot ======================================================================
 # ======================= The first plot ====================================================================

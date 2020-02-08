@@ -68,15 +68,15 @@ for i, obj in enumerate(data2.Uy2):
         #data2.Fy2[i] = data2.Fy2[i]*factor
         data2.Fy2[i] = data2.Fy2[i]'''
         
-fileout = "ModifiedDataSX1-2-1.txt"
+fileout = "ShearForceSX1-2.txt"
 filep1 = open(fileout, 'w')
-for i, obj in enumerate(data2.Uy1):
-    filep1.write("%f\n" % data2.Fy1[i])
+for i, obj in enumerate(Uy2s):
+    filep1.write("%f %f\n" % (obj, Fy2s[i]))
 
-fileout = "ModifiedDataSX1-2-2.txt"
+fileout = "ShearForceSY1-2.txt"
 filep2 = open(fileout, 'w')
-for i, obj in enumerate(data2.Uy2):
-    filep2.write("%f\n" % data2.Fy2[i])
+for i, obj in enumerate(Uy1s):
+    filep2.write("%f %f\n" % (obj, Fy1s[i]))
 
 ax2 = plt.subplot(2, 2, 1)
 #plt.plot(Uy2[0:-200], Fy2[0:-200])
