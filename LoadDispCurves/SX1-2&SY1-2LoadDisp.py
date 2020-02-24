@@ -98,7 +98,7 @@ data1i = []
 print("SY1-2")
 for i, obj in enumerate(data1.Uy1):
     if i==0:
-        da = data1.Uy1[i]*data1.Fy1[i]/1000 + data1.Uy2[i]*data1.Fy2[i]/1000
+        da = data1.Uy1[i]*data1.Fy1[i]/2/1000 + data1.Uy2[i]*data1.Fy2[i]/2/1000
     else:
         da = (data1.Uy1[i]-data1.Uy1[i-1])*(data1.Fy1[i]+data1.Fy1[i-1])*0.5/1000 + (data1.Uy2[i]-data1.Uy2[i-1])*(data1.Fy2[i]+data1.Fy2[i-1])*0.5/1000
     if len(data1i) == 0:

@@ -20,6 +20,11 @@ ksy1, asy1 = LinearRegression(XData, SY1data)
 ksx2, asx2 = LinearRegression(XData, SX2data)
 ksy2, asy2 = LinearRegression(XData, SY2data)
 
+print(-asx1/ksx1)
+print(-asy1/ksy1)
+print(-asx2/ksx2)
+print(-asy2/ksy2)
+
 SX1fit = map(lambda x: ksx1*x + asx1, XData)
 SY1fit = map(lambda x: ksy1*x + asy1, XData)
 SX2fit = map(lambda x: ksx2*x + asx2, XData)

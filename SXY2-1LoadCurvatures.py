@@ -19,6 +19,9 @@ SX2ExpLoadCurvatureData = "/media/chenting/Work/Structural Engineering/Beam-CFSC
 
 SX1FELoadCurvatureData = "/media/chenting/Work/Structural Engineering/Beam-CFSConnection/MTS Data/BeamSectionMomentCurvature.txt"
 
+MomentCurvatureSX = "MomentCurvatureSX.txt"
+MomentCurvatureSY = "MomentCurvatureSY.txt"
+
 fontpath = '/usr/share/fonts/truetype/msttcorefonts/Arial.ttf'
 fontprop = fm.FontProperties(family='Arial', fname=fontpath, size=16)
 mpl.rcParams.update({'font.size': 16, 'font.family': 'Arial'})
@@ -100,6 +103,10 @@ plt.plot(SectionMyX, [SectionMy]*len(SectionMyX), linestyle='-.', dashes=(15, 10
 plt.text(2.8e-5, 210, "Yield Initiation")
 plt.text(2.8e-5, 240, "Full Plastic Moment")
 
+fnY = open("MomentCurvatureSY.txt", 'w')
+for i, obj in enumerate(ExpSYx):
+    fnY.write('%.10f %f\n' % (obj, ExpSYy[i]))
+
 # Plot legend
 plt.legend(handles=[p2, p3, p1], loc=1, bbox_to_anchor=(0.99, 0.3), frameon=False, prop=fontprop)
 
@@ -122,6 +129,10 @@ ax1.yaxis.set_label_coords(-0.1, 0.5)
 ax2 = plt.subplot(1, 2, 1)
 plt.plot(ExpSXx, ExpSXy, color='black', linestyle='-', label='Experiment SX2', markersize=10, markevery=(40, 35))
 p1 = mlines.Line2D([], [], color='black', linestyle='-', markersize=10, label='Experiment SX2')
+
+fnX = open("MomentCurvatureSX.txt", 'w')
+for i, obj in enumerate(ExpSXx):
+    fnX.write('%.10f %f\n' % (obj, ExpSXy[i]))
 
 # Plot SX1-1 FE Data
 plt.plot(FESXx, FESXy, color='black', linestyle='--', label='Theoretical', markersize=10, markevery=(40, 35))
