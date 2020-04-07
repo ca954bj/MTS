@@ -15,14 +15,19 @@ I2 = 1.6065E-04
 
 C = F1*L1**2/k + F1*L1**3/(3*E1*I1)
 eq = F1*L1**2*L2/(3*E2*I2) + C - D1
-print(eq)
 
 # For SX1
 eq1 = eq.subs({F1:54782.463, D1:0.015882007*(1-0.074)})
 sol1 = solve(eq1, k)
 
 # For SY1
-eq2 = eq.subs({F1:29374.182, D1:0.0078759985*(1-0.074)})
+eq2 = eq.subs({F1:19695.21, D1:0.0049079986*(1-0.074)})
 sol2 = solve(eq2, k)
+print(eq2)
 
-print(sol2)
+print(sol2[0]/1e6)
+
+disp0 = F1*L1**2*L2/(3*E2*I2) + C
+disp1 = disp0.subs({F1:150e3/2.22, k:1051e6})
+print('disp = %f' % disp1)
+
