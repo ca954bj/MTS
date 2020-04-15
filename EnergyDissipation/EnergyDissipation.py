@@ -31,7 +31,7 @@ SY1fit = map(lambda x: ksy1*x + asy1, XDatafit)
 SX2fit = map(lambda x: ksx2*x + asx2, XDatafit)
 SY2fit = map(lambda x: ksy2*x + asy2, XDatafit)
 
-plt.figure(figsize=(6, 5))
+plt.figure(figsize=(8, 5))
 ax1 = plt.subplot(1, 1, 1)
 
 p1, = plt.plot(XData, SX1data, color='black', label='SX1', marker='o', markersize=6, linestyle='-')
@@ -50,7 +50,7 @@ plt.text(3.8, 40-5, 'C30', fontproperties=fontprop)
 plt.text(4.8, 50-5, 'C32', fontproperties=fontprop)
 plt.text(5.8, 60-5, 'C34', fontproperties=fontprop)
 
-ax1.legend(handles=[p1, p2, p3, p4], loc=1, bbox_to_anchor=(1.04, 0.35), prop=fontprop, frameon=False)
+ax1.legend(handles=[p1, p2, p3, p4], loc=1, bbox_to_anchor=(1.0, 0.35), prop=fontprop, frameon=False)
 ax1.grid(linestyle='--')
 plt.ylim(0, 60)
 plt.xlim(0, 7)
