@@ -41,3 +41,4 @@ plt.grid(linestyle='--')
 plt.subplots_adjust(left=0.13, right=0.96, wspace=0.22, hspace=0.1, bottom=0.12, top=0.95)
 
 plt.show()
+

@@ -9,7 +9,7 @@ inputfiletrrm2 = "/media/chenting/Work/Structural Engineering/Beam-CFSConnection
 
 
 
-execfile('MTSsetup2.py')
+execfile('../MTSsetup2.py')
 difflimit = 20
 data1 = readfile(inputfiles, outfile, difflimit)
 
@@ -37,15 +37,15 @@ for line in TRrmSX21:
         Trrm2x.append(float(nums[0]))
         Trrm2y.append(float(nums[1]))
 
-
+outdata = []
 
 # ====================== Start to Plot ======================================================================
 # ======================= The first plot ====================================================================
 
-plt.figure(figsize=(11, 5))
+pubplot(1, 2, 2)
+lt.figure(figsize=(11, 5))
 
-ax1 = plt.subplot(1, 2, 2)
-
+ax1 = plt.s
 p1, = plt.plot(reverse1[200:-100], reverse2[200:-100], color='black', label='Experiment', marker='^', markersize=10, markevery=(130, 60))
 p5, = plt.plot(Trrm2x, Trrm2y, color = 'black', label='FEM', marker='o', markersize=10, markevery=(63, 30))
 plt.legend(handles=[p1, p5], loc=1, bbox_to_anchor=(0.99, 0.3), prop=fontprop)
@@ -58,6 +58,11 @@ plt.yticks([0, 30, 60, 90, 120, 150, 180], fontproperties=fontprop)
 plt.xlabel('Vertical Displacement (mm)', fontproperties=fontprop)
 plt.ylabel('Vertical Load (kN)', fontproperties=fontprop)
 ax1.yaxis.set_label_coords(-0.1, 0.5)
+
+outdata.append(reverse1[200:-100])
+outdata.append(reverse2[200:-100])
+outdata.append(Trrm2x)
+outdata.append(Trrm2y)
 
 # ============================ The second pic ===============================================================
 data2 = readfile(inputfiles2, outfile2, difflimit)
@@ -84,4 +89,9 @@ ax2.yaxis.set_label_coords(-0.1, 0.5)
 plt.subplots_adjust(left=0.08, right=0.98, wspace=0.22, hspace=0.1, bottom=0.12, top=0.95)
 
 plt.show()
+
+outdata.append(reverse1[200:-100])
+outdata.append(reverse2[200:-100])
+outdata.append(Trrm1x)
+outdata.append(Trrm1y)
 

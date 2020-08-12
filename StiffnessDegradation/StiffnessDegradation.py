@@ -18,14 +18,14 @@ StiffnessSY2 = [9452.738695, 8378.192191, 8032.558236, 7492.523096, 7087.205409,
 
 plt.figure(figsize=(8, 6))
 
-plt.plot(ShearSX1, StiffnessSX1, color='k', linestyle='-', label='SX1', marker='^', markersize=10)
-p1 = mlines.Line2D([], [], color='black', marker='^', markersize=10, label='SX1')
-plt.plot(ShearSY1, StiffnessSY1, color='k', linestyle='-', label='SY1', marker='v', markersize=10)
-p2 = mlines.Line2D([], [], color='black', marker='v', markersize=10, label='SY1')
-plt.plot(ShearSX2, StiffnessSX2, color='k', linestyle='-', label='SX2', marker='*', markersize=10)
-p3 = mlines.Line2D([], [], color='black', marker='*', markersize=10, label='SX2')
-plt.plot(ShearSY2, StiffnessSY2, color='k', linestyle='-', label='SY2', marker='o', markersize=10)
-p4 = mlines.Line2D([], [], color='black', marker='o', markersize=10, label='SY2')
+plt.plot(ShearSX1, StiffnessSX1, color='k', linestyle='-', label='SX1-2', marker='^', markersize=10)
+p1 = mlines.Line2D([], [], color='black', marker='^', markersize=10, label='SX1-2')
+plt.plot(ShearSY1, StiffnessSY1, color='k', linestyle='-', label='SY1-2', marker='v', markersize=10)
+p2 = mlines.Line2D([], [], color='black', marker='v', markersize=10, label='SY1-2')
+plt.plot(ShearSX2, StiffnessSX2, color='k', linestyle='-', label='SX2-2', marker='*', markersize=10)
+p3 = mlines.Line2D([], [], color='black', marker='*', markersize=10, label='SX2-2')
+plt.plot(ShearSY2, StiffnessSY2, color='k', linestyle='-', label='SY2-2', marker='o', markersize=10)
+p4 = mlines.Line2D([], [], color='black', marker='o', markersize=10, label='SY2-2')
 
 plt.grid(linestyle='--')
 plt.ylim(0, 20000)

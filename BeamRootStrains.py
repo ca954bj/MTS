@@ -176,3 +176,14 @@ plt.gca().add_artist(secondlegend)
 
 plt.subplots_adjust(left=0.08, right=0.98, wspace=0.22, hspace=0.2, bottom=0.07, top=0.95)
 plt.show()
+
+## For printing data only ================================================================
+outputd = [DataSY1[40], DataSY1[0], DataSY1[60], DataSY1[0], DataSY1[80], DataSY1[0], DataSY1[100], DataSY1[0], DataSY2[40], DataSY2[0], DataSY2[60], DataSY2[0], DataSY2[80], DataSY2[0], DataSY2[100], DataSY2[0]]
+fnout = open('Fig.txt', 'w')
+for obj1 in outputd:
+    for obj2 in obj1:
+        fnout.write('%s'%obj2)
+        fnout.write(' ')
+    fnout.write('\n')
+fnout.close()
+## =====================================================================================

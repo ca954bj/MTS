@@ -286,12 +286,12 @@ plt.subplot(1, 2, 2)
 
 plt.plot(X7, Mz7, color='black', linestyle='--')
 
-popt, pcov = curve_fit(fitfunction, X1, Mz1)
-plt.plot(X1, map(lambda x: fitfunction(x, *popt), X1), color='black')
-popt, pcov = curve_fit(fitfunction, X2, Mz2)
-plt.plot(X2, map(lambda x: fitfunction(x, *popt), X2), color='black')
-popt, pcov = curve_fit(fitfunction, X3, Mz3)
-plt.plot(X3, map(lambda x: fitfunction(x, *popt), X3), color='black')
+popt1, pcov1 = curve_fit(fitfunction, X1, Mz1)
+plt.plot(X1, map(lambda x: fitfunction(x, *popt1), X1), color='black')
+popt2, pcov2 = curve_fit(fitfunction, X2, Mz2)
+plt.plot(X2, map(lambda x: fitfunction(x, *popt2), X2), color='black')
+popt3, pcov3 = curve_fit(fitfunction, X3, Mz3)
+plt.plot(X3, map(lambda x: fitfunction(x, *popt3), X3), color='black')
 
 plt.grid()
 plt.ylim(-12, 2)
@@ -304,3 +304,4 @@ plt.ylabel('Bending Moment (kN*m)', fontproperties=fontprop)
 
 plt.subplots_adjust(left=0.08, right=0.98, wspace=0.22, hspace=0.1, bottom=0.12, top=0.95)
 plt.show()
+

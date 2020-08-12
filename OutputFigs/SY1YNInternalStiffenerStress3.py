@@ -11,29 +11,29 @@ from scipy.optimize import curve_fit
 # ================================= Input Location ================================
 
 # Internal Stiffener 120kN
-Infile2 = '/media/chenting/Work/ProgramCode/AbaqusInpScript2/SY1ISSYP2.txt'
-Infile1 = '/media/chenting/Work/ProgramCode/AbaqusInpScript2/SY1ISSYP1.txt'
+Infile2 = '/media/chenting/Work/ProgramCode/AbaqusInpScript2/SY1ISSYN2.txt'
+Infile1 = '/media/chenting/Work/ProgramCode/AbaqusInpScript2/SY1ISSYN1.txt'
 
 # Internal Stiffener 90kN
-Infile4 = '/media/chenting/Work/ProgramCode/AbaqusInpScript2/SY1ISSYP4.txt'
-Infile3 = '/media/chenting/Work/ProgramCode/AbaqusInpScript2/SY1ISSYP3.txt'
+Infile4 = '/media/chenting/Work/ProgramCode/AbaqusInpScript2/SY1ISSYN4.txt'
+Infile3 = '/media/chenting/Work/ProgramCode/AbaqusInpScript2/SY1ISSYN3.txt'
 
 # Internal Stiffener 60kN
-Infile6 = '/media/chenting/Work/ProgramCode/AbaqusInpScript2/SY1ISSYP6.txt'
-Infile5 = '/media/chenting/Work/ProgramCode/AbaqusInpScript2/SY1ISSYP5.txt'
+Infile6 = '/media/chenting/Work/ProgramCode/AbaqusInpScript2/SY1ISSYN6.txt'
+Infile5 = '/media/chenting/Work/ProgramCode/AbaqusInpScript2/SY1ISSYN5.txt'
 
 # SteelRod 120kN
-Infile7 = '/media/chenting/Work/Structural Engineering/Beam-CFSConnection/MTS Data/SX1SRYPZP.txt'
+Infile7 = '/media/chenting/Work/Structural Engineering/Beam-CFSConnection/MTS Data/SX1SRYNZP.txt'
 
 # ================================= Output Location ===============================
 # Internal Stiffener 120kN
-Outfile1 = '/media/chenting/Work/Structural Engineering/Beam-CFSConnection/MTS Data/SY1ISSYP120.txt'
+Outfile1 = '/media/chenting/Work/Structural Engineering/Beam-CFSConnection/MTS Data/SY1ISSYN120.txt'
 
 # Internal Stiffener 90kN
-Outfile2 = '/media/chenting/Work/Structural Engineering/Beam-CFSConnection/MTS Data/SY1ISSYP90.txt'
+Outfile2 = '/media/chenting/Work/Structural Engineering/Beam-CFSConnection/MTS Data/SY1ISSYN90.txt'
 
 # Internal Stiffener 60kN
-Outfile3 = '/media/chenting/Work/Structural Engineering/Beam-CFSConnection/MTS Data/SY1ISSYP60.txt'
+Outfile3 = '/media/chenting/Work/Structural Engineering/Beam-CFSConnection/MTS Data/SY1ISSYN60.txt'
 
 f1 = open(Infile1, 'r')
 f2 = open(Infile2, 'r')
@@ -260,7 +260,7 @@ for line in f7:
             Fx7.append(float(obj)/1000.0*2)
     if LineCounter == 3:
         for obj in content:
-            Mz7.append(float(obj)/1000000.0*2)
+            Mz7.append(-float(obj)/1000000.0*2)
 
 Fx7.reverse()
 Mz7.reverse()
@@ -285,12 +285,12 @@ plt.ylabel('Axial Load (kN)', fontproperties=fontprop)
 plt.subplot(1, 2, 2)
 
 plt.plot(X7, Mz7, color='black', linestyle='--')
-popt1, pcov1 = curve_fit(fitfunction, X1, Mz1)
-plt.plot(X1, map(lambda x: fitfunction(x, *popt1), X1), color='black')
-popt2, pcov2 = curve_fit(fitfunction, X2, Mz2)
-plt.plot(X2, map(lambda x: fitfunction(x, *popt2), X2), color='black')
-popt3, pcov3 = curve_fit(fitfunction, X3, Mz3)
-plt.plot(X3, map(lambda x: fitfunction(x, *popt3), X3), color='black')
+popt, pcov = curve_fit(fitfunction, X1, Mz1)
+plt.plot(X1, map(lambda x: fitfunction(x, *popt), X1), color='black')
+popt, pcov = curve_fit(fitfunction, X2, Mz2)
+plt.plot(X2, map(lambda x: fitfunction(x, *popt), X2), color='black')
+popt, pcov = curve_fit(fitfunction, X3, Mz3)
+plt.plot(X3, map(lambda x: fitfunction(x, *popt), X3), color='black')
 
 plt.grid()
 plt.ylim(-12, 2)
@@ -304,14 +304,14 @@ plt.ylabel('Bending Moment (kN*m)', fontproperties=fontprop)
 plt.subplots_adjust(left=0.08, right=0.98, wspace=0.22, hspace=0.1, bottom=0.12, top=0.95)
 plt.show()
 
-fnout = "Fig15b.txt"
-outdata = [X7, Mz7, X1, map(lambda x: fitfunction(x, *popt1), X1), X2, map(lambda x: fitfunction(x, *popt2), X2), X3, map(lambda x: fitfunction(x, *popt3), X3)]
+# ==============================
+outdata = [X7, Mz7, X1, map(lambda x: fitfunction(x, *popt), X1), X2, map(lambda x: fitfunction(x, *popt), X2), X3, map(lambda x: fitfunction(x, *popt), X3)]
+fnout = "fig15a.txt"
 fnoutn = open(fnout, 'w')
+
 for obj1 in outdata:
-	for obj2 in obj1:
-		fnoutn.write('%f ' % obj2)
-	fnoutn.write('\n')
-
-
-
+    for obj2 in obj1:
+        fnoutn.write('%f ' % obj2)
+    fnoutn.write('n')
+fnoutn.close()
 

@@ -13,13 +13,15 @@ inputfiletr1 = "/media/chenting/Work/Structural Engineering/Beam-CFSConnection/M
 inputfiletrrm1 = "/media/chenting/Work/Structural Engineering/Beam-CFSConnection/MTS Data/SY1-1InitialStiffnesswithMR.txt"
 inputfiletrrm2 = "/media/chenting/Work/Structural Engineering/Beam-CFSConnection/MTS Data/SX1-1InitialStiffnesswithMR.txt"
 
-execfile('MTSsetup.py')
+execfile('../MTSsetup.py')
 difflimit = [60, -15, 90, -0.5, 1000, -0.1]
 
 MySX = 108.622
 MySY = 103.240
 
 MyX = range(0, 50)
+
+outdata = []
 
 FE1x = []
 FE1y = []
@@ -107,6 +109,13 @@ p2 = mlines.Line2D([], [], color='black', marker='v', markersize=10, label='Left
 plt.plot(FE2x, FE2y, color='black', label='FEM', marker='o', markersize=10, markevery=(72, 18))
 p3 = mlines.Line2D([], [], color='black', marker='o', markersize=10, label='FEM')
 
+outdata.append(data1Uy1g)
+outdata.append(data1.Fy1)
+outdata.append(reverse1[5:])
+outdata.append(reverse2[5:])
+outdata.append(FE2x)
+outdata.append(FE2y)
+
 # Plot Rigid Connection Curve
 #p4, = plt.plot(Tr1x, Tr1y, color='y', label='Theoretical Initial Stiffness')
 
@@ -153,6 +162,13 @@ p3 = mlines.Line2D([], [], color='black', marker='o', markersize=10, label='FEM'
 
 plt.legend(handles=[p1, p2, p3], loc=1, bbox_to_anchor=(0.99, 0.3), prop=fontprop)
 
+outdata.append(reverse1[40:])
+outdata.append(reverse2[40:])
+outdata.append(data2uy2g[61:])
+outdata.append(data2.Fy2[61:])
+outdata.append(FE1x)
+outdata.append(FE1y)
+
 plt.grid()
 plt.ylim(0, 180)
 plt.xlim(0, 135)
@@ -164,5 +180,11 @@ ax2.yaxis.set_label_coords(-0.1, 0.5)
 
 plt.subplots_adjust(left=0.08, right=0.98, wspace=0.22, hspace=0.1, bottom=0.12, top=0.95)
 
-cc
+plt.show()
 
+fnout = "Fig8c&a.txt"
+fnoutn = open(fnout, 'w')
+for obj1 in outdata:
+	for obj2 in obj1:
+		fnoutn.write('%f ' % obj2)
+	fnoutn.write('\n')
