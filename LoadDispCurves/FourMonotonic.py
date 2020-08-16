@@ -4,14 +4,11 @@ outfile = "/media/chenting/Work/Structural Engineering/Beam-CFSConnection/MTS Da
 inputfiles2 = "/media/chenting/Work/Structural Engineering/Beam-CFSConnection/MTS Data/d1206.dat"
 outfile2 = "/media/chenting/Work/Structural Engineering/Beam-CFSConnection/MTS Data/New1206.txt"
 
-inputfiles2FE = "/media/chenting/Work/Structural Engineering/Beam-CFSConnection/MTS Data/SX1-1FELoadDisp.txt"
-inputfilesFE = "/media/chenting/Work/Structural Engineering/Beam-CFSConnection/MTS Data/SY1-1FELoadDisp.txt"
+inputfiles3 = "/media/chenting/Work/Structural Engineering/Beam-CFSConnection/MTS Data/d1215.dat"
+outfile3 = "/media/chenting/Work/Structural Engineering/Beam-CFSConnection/MTS Data/New1215.txt"
 
-inputfiletr2 = "/media/chenting/Work/Structural Engineering/Beam-CFSConnection/MTS Data/SX1-1TheoreticalInitialStiffness.txt"
-inputfiletr1 = "/media/chenting/Work/Structural Engineering/Beam-CFSConnection/MTS Data/SY1-1TheoreticalInitialStiffness.txt"
-
-inputfiletrrm1 = "/media/chenting/Work/Structural Engineering/Beam-CFSConnection/MTS Data/SY1-1InitialStiffnesswithMR.txt"
-inputfiletrrm2 = "/media/chenting/Work/Structural Engineering/Beam-CFSConnection/MTS Data/SX1-1InitialStiffnesswithMR.txt"
+inputfiles4 = "/media/chenting/Work/Structural Engineering/Beam-CFSConnection/MTS Data/d1218.dat"
+outfile4 = "/media/chenting/Work/Structural Engineering/Beam-CFSConnection/MTS Data/New1218.txt"
 
 execfile('../MTSsetup.py')
 difflimit = [60, -15, 90, -0.5, 1000, -0.1]
