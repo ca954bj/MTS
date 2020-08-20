@@ -1,4 +1,4 @@
-execfile('../MTSsetupTimes.py')
+execfile('../MTSsetup.py')
 
 # SX1-2 Data
 ShearSX1 = [0.003652, 0.004889, 0.0074, 0.009942, 0.01496, 0.01996, 0.02995, 0.03995, 0.04997, 0.05998]
@@ -16,16 +16,16 @@ StiffnessSX2 = [13890.91396, 12283.75112, 12030.77844, 11141.22642, 9913.48702, 
 ShearSY2 = [0.003706, 0.004937, 0.007445, 0.009972, 0.014979, 0.019977, 0.029977, 0.039974, 0.049973, 0.059973]
 StiffnessSY2 = [9452.738695, 8378.192191, 8032.558236, 7492.523096, 7087.205409, 6840.853029, 6559.598508, 6389.409985, 6489.711894, 6002.245332]
 
-plt.figure(figsize=(6, 4))
+plt.figure(figsize=(8, 6))
 
-plt.plot(ShearSX1, StiffnessSX1, color='k', linestyle='-', label='XI-C', marker='^', markersize=10)
-p1 = mlines.Line2D([], [], color='black', marker='^', markersize=10, label='XI-C')
-plt.plot(ShearSY1, StiffnessSY1, color='k', linestyle='-', label='YI-C', marker='v', markersize=10)
-p2 = mlines.Line2D([], [], color='black', marker='v', markersize=10, label='YI-C')
-plt.plot(ShearSX2, StiffnessSX2, color='k', linestyle='-', label='XE-C', marker='*', markersize=10)
-p3 = mlines.Line2D([], [], color='black', marker='*', markersize=10, label='XE-C')
-plt.plot(ShearSY2, StiffnessSY2, color='k', linestyle='-', label='YE-C', marker='o', markersize=10)
-p4 = mlines.Line2D([], [], color='black', marker='o', markersize=10, label='YE-C')
+plt.plot(ShearSX1, StiffnessSX1, color='k', linestyle='-', label='SX1-2', marker='^', markersize=10)
+p1 = mlines.Line2D([], [], color='black', marker='^', markersize=10, label='SX1-2')
+plt.plot(ShearSY1, StiffnessSY1, color='k', linestyle='-', label='SY1-2', marker='v', markersize=10)
+p2 = mlines.Line2D([], [], color='black', marker='v', markersize=10, label='SY1-2')
+plt.plot(ShearSX2, StiffnessSX2, color='k', linestyle='-', label='SX2-2', marker='*', markersize=10)
+p3 = mlines.Line2D([], [], color='black', marker='*', markersize=10, label='SX2-2')
+plt.plot(ShearSY2, StiffnessSY2, color='k', linestyle='-', label='SY2-2', marker='o', markersize=10)
+p4 = mlines.Line2D([], [], color='black', marker='o', markersize=10, label='SY2-2')
 
 plt.grid(linestyle='--')
 plt.ylim(0, 20000)
@@ -37,7 +37,7 @@ plt.yticks([0, 2500, 5000, 7500, 10000, 12500, 15000, 17500, 20000], fontpropert
 plt.xlabel('Story Drift Ratio (%)', fontproperties=fontprop)
 plt.ylabel('Shear Stiffness (kN/rad)', fontproperties=fontprop)
 
-plt.legend(handles=[p1, p2, p3, p4], loc=1, bbox_to_anchor=(1.02, 1.03), prop=fontprop, frameon=False)
-plt.subplots_adjust(left=0.16, right=0.98, wspace=0.22, hspace=0.1, bottom=0.14, top=0.95)
+plt.legend(handles=[p1, p2, p3, p4], loc=1, bbox_to_anchor=(0.99, 0.99), prop=fontprop)
+plt.subplots_adjust(left=0.15, right=0.98, wspace=0.22, hspace=0.1, bottom=0.12, top=0.95)
 
 plt.show()
